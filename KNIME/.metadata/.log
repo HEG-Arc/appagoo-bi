@@ -1,0 +1,24 @@
+!SESSION 2014-05-14 09:30:03.588 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.net 1 0 2014-05-14 09:31:26.315
+!MESSAGE System property http.proxyHost is not set but should be proxy.he-arc.ch.
+
+!ENTRY org.eclipse.core.net 1 0 2014-05-14 09:31:26.315
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2014-05-14 09:31:26.331
+!MESSAGE System property https.proxyHost is not set but should be proxy.he-arc.ch.
+
+!ENTRY org.eclipse.core.net 1 0 2014-05-14 09:31:26.331
+!MESSAGE System property https.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2014-05-14 09:31:26.331
+!MESSAGE System property https.proxyHost is not set but should be proxy.he-arc.ch.
+
+!ENTRY org.eclipse.core.net 1 0 2014-05-14 09:31:26.331
+!MESSAGE System property https.proxyPort is not set but should be 8080.
