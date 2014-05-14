@@ -21,19 +21,19 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="AppendOriginalDocuments" type="xboolean" value="true"/>
+<entry key="AppendOriginalDocuments" type="xboolean" value="false"/>
 <config key="OriginalDocumentColumn_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
 </config>
-<entry key="OriginalDocumentColumn" type="xstring" value="Orig Document"/>
+<entry key="OriginalDocumentColumn" type="xstring" value="Document"/>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="Crée un Bag of%%00013%%00010Words"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="465"/>
+<entry key="x-coordinate" type="xint" value="467"/>
 <entry key="y-coordinate" type="xint" value="245"/>
-<entry key="width" type="xint" value="111"/>
+<entry key="width" type="xint" value="106"/>
 <entry key="height" type="xint" value="26"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <config key="styles"/>
@@ -48,12 +48,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 8346, Cols: 3"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 193812, Cols: 2"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="3436982f-15dd-4bde-b5bd-dc0e5e6d26ad"/>
+<entry key="file_store_id" type="xstring" value="880d6868-0ad7-459b-a68b-65fbd08f7f30"/>
 </config>
 </config>
