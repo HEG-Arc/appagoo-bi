@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="176" y="176">
 <fastViewData fastViewLocation="1024"/>
@@ -18,15 +18,20 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="0: KNIME_PLAYGET" title="0: KNIME_PLAYGET" tooltip="0: KNIME_PLAYGET" workbook="DefaultEditorWorkbook">
+<editor id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="2: KNIME_PLAYGET" title="2: KNIME_PLAYGET" tooltip="2: KNIME_PLAYGET" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
 </editor>
-<editor activePart="true" focus="true" id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="2: KNIME_ETL_DIMEDITOR" title="2: KNIME_ETL_DIMEDITOR" tooltip="2: KNIME_ETL_DIMEDITOR" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="0: KNIME_ETL_DIMEDITOR" title="0: KNIME_ETL_DIMEDITOR" tooltip="0: KNIME_ETL_DIMEDITOR" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/KNIME_ETL_DIMEDITOR/workflow.knime"/>
+</editor>
+<editor id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="3: Exemple_RechercheStringKeywords" title="3: Exemple_RechercheStringKeywords" tooltip="3: Exemple_RechercheStringKeywords" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 </editor>
 </editors>
 <views>
@@ -124,7 +129,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@305b8340" ratio="0.6997167" ratioLeft="494" ratioRight="212" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@305b8340" ratio="0.8279009" ratioLeft="1270" ratioRight="264" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.knime.workbench.helpview" appearance="2" expanded="2">
 <page content="org.knime.workbench.helpview" label="Node Description"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -161,6 +166,8 @@
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_ETL/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_ETL_DIMEDITOR/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 </editors>
 <item historyLabel="2: KNIME_project" index="0"/>
 <item historyLabel="0: KNIME_PLAYGET" index="1"/>
@@ -194,7 +201,21 @@
 <item historyLabel="0: KNIME_PLAYGET" index="1"/>
 <item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
 <item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item active="true" historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="6"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="6"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="6"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="6"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="6"/>
+<item historyLabel="3: Exemple_RechercheStringKeywords" index="7"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="6"/>
+<item historyLabel="2: KNIME_PLAYGET" index="6"/>
+<item active="true" historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
 </navigationHistory>
 </page>
 <workbenchWindowAdvisor/>

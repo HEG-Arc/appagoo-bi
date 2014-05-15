@@ -18,9 +18,9 @@
 <entry key="new_column_name" type="xstring" value="name"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
-<config key="number">
-<entry key="old_column_name" type="xstring" value="number"/>
-<entry key="new_column_name" type="xstring" isnull="true" value=""/>
+<config key="MAXPK">
+<entry key="old_column_name" type="xstring" value="MAXPK"/>
+<entry key="new_column_name" type="xstring" value="number"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 </config>
@@ -41,6 +41,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="eb3e12f6-3e72-4b1e-b95a-a64f6227d956"/>
+<entry key="file_store_id" type="xstring" value="6fb75502-caad-4eb8-a728-489d5d334c00"/>
 </config>
 </config>

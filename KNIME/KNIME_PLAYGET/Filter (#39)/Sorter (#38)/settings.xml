@@ -14,7 +14,7 @@
 <config key="model">
 <config key="incllist">
 <entry key="array-size" type="xint" value="2"/>
-<entry key="0" type="xstring" value="Sum(TF abs)"/>
+<entry key="0" type="xstring" value="Count(Document)"/>
 <entry key="1" type="xstring" value="Term"/>
 </config>
 <config key="sortOrder">
@@ -35,12 +35,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 7913, Cols: 3"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 4296, Cols: 3"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="c91beef0-2e75-4dc4-8438-3f19d48626ad"/>
+<entry key="file_store_id" type="xstring" value="4f4cb539-ed43-4398-9505-4fc2183ca3ea"/>
 </config>
 </config>
