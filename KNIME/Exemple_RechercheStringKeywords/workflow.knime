@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
+<entry key="created_by" type="xstring" value="2.9.2.0041468"/>
+<entry key="version" type="xstring" value="2.8.0"/>
+<entry key="name" type="xstring" isnull="true" value=""/>
+<config key="authorInformation">
+<entry key="authored-by" type="xstring" value="trj"/>
+<entry key="authored-when" type="xstring" value="2013-10-14 15:28:41 +0200"/>
+<entry key="lastEdited-by" type="xstring" value="trj"/>
+<entry key="lastEdited-when" type="xstring" value="2014-04-22 14:50:30 +0200"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<config key="workflow_credentials"/>
+<config key="annotations">
+<config key="annotation_0">
+<entry key="text" type="xstring" value="Récupération des données%%00013%%00010%%00013%%00010Cette partie du Workflow s'occupe de récupérer les données dans le fichier Excel fourni par TI Informatique.%%00013%%00010Il est décomposé en plusieurs parties :%%00013%%00010%%00009- La parametrisation: pour la mise en forme du WF ainsi que la définition des différentes variables (communes, etc)%%00013%%00010%%00009- L'extraction: récupération des données dans le fichier Excel et mise en forme%%00013%%00010%%00009- Récupération: extraction des comptes concernant l'énergie et des noms des comptes supérieurs%%00013%%00010%%00009- Mise en forme: suppression des doublons et mise en forme des &quot;Groupes&quot;%%00013%%00010%%00009- Sauvegarde: fichier pour l'historique et manipulation manuelle future"/>
+<entry key="bgcolor" type="xint" value="16777185"/>
+<entry key="x-coordinate" type="xint" value="7"/>
+<entry key="y-coordinate" type="xint" value="4"/>
+<entry key="width" type="xint" value="685"/>
+<entry key="height" type="xint" value="140"/>
+<entry key="alignment" type="xstring" value="LEFT"/>
+<config key="styles">
+<config key="style_0">
+<entry key="start" type="xint" value="0"/>
+<entry key="length" type="xint" value="28"/>
+<entry key="fontname" type="xstring" isnull="true" value=""/>
+<entry key="fontstyle" type="xint" value="1"/>
+<entry key="fontsize" type="xint" value="-1"/>
+<entry key="fgcolor" type="xint" value="0"/>
+</config>
+<config key="style_1">
+<entry key="start" type="xint" value="28"/>
+<entry key="length" type="xint" value="595"/>
+<entry key="fontname" type="xstring" isnull="true" value=""/>
+<entry key="fontstyle" type="xint" value="0"/>
+<entry key="fontsize" type="xint" value="0"/>
+<entry key="fgcolor" type="xint" value="0"/>
+</config>
+</config>
+</config>
+<config key="annotation_1">
+<entry key="text" type="xstring" value="Parametrisation du WF"/>
+<entry key="bgcolor" type="xint" value="8454016"/>
+<entry key="x-coordinate" type="xint" value="7"/>
+<entry key="y-coordinate" type="xint" value="148"/>
+<entry key="width" type="xint" value="1400"/>
+<entry key="height" type="xint" value="140"/>
+<entry key="alignment" type="xstring" value="LEFT"/>
+<config key="styles"/>
+</config>
+<config key="annotation_2">
+<entry key="text" type="xstring" value="Extraction des informations du fichier Excel"/>
+<entry key="bgcolor" type="xint" value="8454143"/>
+<entry key="x-coordinate" type="xint" value="6"/>
+<entry key="y-coordinate" type="xint" value="291"/>
+<entry key="width" type="xint" value="686"/>
+<entry key="height" type="xint" value="398"/>
+<entry key="alignment" type="xstring" value="LEFT"/>
+<config key="styles"/>
+</config>
+<config key="annotation_3">
+<entry key="text" type="xstring" value="Récupération des comptes énergétiques, mise en forme et sauvegarde"/>
+<entry key="bgcolor" type="xint" value="16744576"/>
+<entry key="x-coordinate" type="xint" value="695"/>
+<entry key="y-coordinate" type="xint" value="291"/>
+<entry key="width" type="xint" value="713"/>
+<entry key="height" type="xint" value="397"/>
+<entry key="alignment" type="xstring" value="LEFT"/>
+<config key="styles"/>
+</config>
+</config>
+<config key="nodes">
+<config key="node_2">
+<entry key="id" type="xint" value="2"/>
+<entry key="node_settings_file" type="xstring" value="Column Resorter (#2)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="394"/>
+<entry key="1" type="xint" value="434"/>
+<entry key="2" type="xint" value="94"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_91">
+<entry key="id" type="xint" value="91"/>
+<entry key="node_settings_file" type="xstring" value="Comptes Nive (#91)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="572"/>
+<entry key="1" type="xint" value="575"/>
+<entry key="2" type="xint" value="101"/>
+<entry key="3" type="xint" value="81"/>
+</config>
+</config>
+</config>
+<config key="node_93">
+<entry key="id" type="xint" value="93"/>
+<entry key="node_settings_file" type="xstring" value="Comptes D_ta (#93)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="573"/>
+<entry key="1" type="xint" value="434"/>
+<entry key="2" type="xint" value="108"/>
+<entry key="3" type="xint" value="81"/>
+</config>
+</config>
+</config>
+<config key="node_111">
+<entry key="id" type="xint" value="111"/>
+<entry key="node_settings_file" type="xstring" value="Parametrisat (#111)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="40"/>
+<entry key="1" type="xint" value="184"/>
+<entry key="2" type="xint" value="88"/>
+<entry key="3" type="xint" value="66"/>
+</config>
+</config>
+</config>
+<config key="node_112">
+<entry key="id" type="xint" value="112"/>
+<entry key="node_settings_file" type="xstring" value="Column Rename (#112)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="270"/>
+<entry key="1" type="xint" value="434"/>
+<entry key="2" type="xint" value="91"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_113">
+<entry key="id" type="xint" value="113"/>
+<entry key="node_settings_file" type="xstring" value="R_cup_ration (#113)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="777"/>
+<entry key="1" type="xint" value="425"/>
+<entry key="2" type="xint" value="75"/>
+<entry key="3" type="xint" value="81"/>
+</config>
+</config>
+</config>
+<config key="node_114">
+<entry key="id" type="xint" value="114"/>
+<entry key="node_settings_file" type="xstring" value="Doublons et (#114)/workflow.knime"/>
+<entry key="node_is_meta" type="xboolean" value="true"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="972"/>
+<entry key="1" type="xint" value="425"/>
+<entry key="2" type="xint" value="101"/>
+<entry key="3" type="xint" value="81"/>
+</config>
+</config>
+</config>
+<config key="node_115">
+<entry key="id" type="xint" value="115"/>
+<entry key="node_settings_file" type="xstring" value="XLS Writer (#115)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="1300"/>
+<entry key="1" type="xint" value="425"/>
+<entry key="2" type="xint" value="61"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_116">
+<entry key="id" type="xint" value="116"/>
+<entry key="node_settings_file" type="xstring" value="Table Writer (#116)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="778"/>
+<entry key="1" type="xint" value="575"/>
+<entry key="2" type="xint" value="70"/>
+<entry key="3" type="xint" value="79"/>
+</config>
+</config>
+</config>
+<config key="node_117">
+<entry key="id" type="xint" value="117"/>
+<entry key="node_settings_file" type="xstring" value="XLS Reader (#117)/settings.xml"/>
+<entry key="node_is_meta" type="xboolean" value="false"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+<config key="ui_settings">
+<config key="extrainfo.node.bounds">
+<entry key="array-size" type="xint" value="4"/>
+<entry key="0" type="xint" value="160"/>
+<entry key="1" type="xint" value="434"/>
+<entry key="2" type="xint" value="64"/>
+<entry key="3" type="xint" value="95"/>
+</config>
+</config>
+</config>
+</config>
+<config key="connections">
+<config key="connection_0">
+<entry key="sourceID" type="xint" value="2"/>
+<entry key="destID" type="xint" value="93"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_1">
+<entry key="sourceID" type="xint" value="2"/>
+<entry key="destID" type="xint" value="91"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_2">
+<entry key="sourceID" type="xint" value="91"/>
+<entry key="destID" type="xint" value="116"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_3">
+<entry key="sourceID" type="xint" value="93"/>
+<entry key="destID" type="xint" value="113"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_4">
+<entry key="sourceID" type="xint" value="111"/>
+<entry key="destID" type="xint" value="113"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="0"/>
+<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.ConnectionUIInformation"/>
+<config key="ui_settings">
+<entry key="extrainfo.conn.bendpoints_size" type="xint" value="1"/>
+<config key="extrainfo.conn.bendpoints_0">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xint" value="760"/>
+<entry key="1" type="xint" value="197"/>
+</config>
+</config>
+</config>
+<config key="connection_5">
+<entry key="sourceID" type="xint" value="111"/>
+<entry key="destID" type="xint" value="117"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_6">
+<entry key="sourceID" type="xint" value="112"/>
+<entry key="destID" type="xint" value="2"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_7">
+<entry key="sourceID" type="xint" value="113"/>
+<entry key="destID" type="xint" value="114"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="0"/>
+</config>
+<config key="connection_8">
+<entry key="sourceID" type="xint" value="114"/>
+<entry key="destID" type="xint" value="115"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_9">
+<entry key="sourceID" type="xint" value="117"/>
+<entry key="destID" type="xint" value="112"/>
+<entry key="sourcePort" type="xint" value="1"/>
+<entry key="destPort" type="xint" value="1"/>
+</config>
+</config>
+<config key="workflow_editor_settings">
+<entry key="workflow.editor.snapToGrid" type="xboolean" value="false"/>
+<entry key="workflow.editor.ShowGrid" type="xboolean" value="false"/>
+<entry key="workflow.editor.gridX" type="xint" value="90"/>
+<entry key="workflow.editor.gridY" type="xint" value="120"/>
+<entry key="workflow.editor.zoomLevel" type="xdouble" value="1.0"/>
+</config>
+</config>

@@ -12,11 +12,6 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<config key="DocumentColumn_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="DocumentColumn" type="xstring" value="Document"/>
 <config key="AppendOriginalDocuments_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -27,14 +22,19 @@
 <entry key="EnabledStatus" type="xboolean" value="false"/>
 </config>
 <entry key="OriginalDocumentColumn" type="xstring" value="Document"/>
+<config key="DocumentColumn_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="DocumentColumn" type="xstring" value="Document"/>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="Crée un Bag of%%00013%%00010Words"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="467"/>
+<entry key="x-coordinate" type="xint" value="470"/>
 <entry key="y-coordinate" type="xint" value="245"/>
-<entry key="width" type="xint" value="106"/>
-<entry key="height" type="xint" value="26"/>
+<entry key="width" type="xint" value="101"/>
+<entry key="height" type="xint" value="30"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <config key="styles"/>
 </config>
@@ -54,6 +54,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="880d6868-0ad7-459b-a68b-65fbd08f7f30"/>
+<entry key="file_store_id" type="xstring" value="c3fa7eb1-1918-4c4f-ad2f-45b6e11e6c57"/>
 </config>
 </config>

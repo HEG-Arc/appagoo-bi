@@ -1,2 +1,6 @@
+jdbc:sqlserver://157.26.114.94:1433;databaseName=DWH
+jdbc:sqlserver://<host>:<port>/<database_name>
+jdbc:sqlserver://157.26.114.94:1433
+jdbc:sqlserver://localhost:1433;databaseName=DWH
 jdbc:sqlserver://localhost:1433
 jdbc:sqlserver://localhost:1433;databaseName=STG

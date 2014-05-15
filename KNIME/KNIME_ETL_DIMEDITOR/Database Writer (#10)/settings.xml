@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="factory" type="xstring" value="org.knime.base.node.io.database.DBWriterNodeFactory"/>
+<entry key="node-name" type="xstring" value="Database Writer"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<config key="factory_settings"/>
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="driver" type="xstring" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+<entry key="database" type="xstring" value="jdbc:sqlserver://157.26.114.94:1433;databaseName=DWH"/>
+<entry key="credential_name" type="xstring" value="JDITB"/>
+<entry key="timezone" type="xstring" value="current"/>
+<entry key="table" type="xstring" value="DimEditor"/>
+<entry key="append_data" type="xboolean" value="true"/>
+<config key="sql_types">
+<entry key="name" type="xstring" value="varchar(255)"/>
+</config>
+<entry key="batch_size" type="xint" value="1"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Errors &quot;1317&quot; writing 1317 rows."/>
+</config>
+<entry key="name" type="xstring" value="Database Writer"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports"/>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="8610a194-721d-46af-bf9b-abf7ec4cb9d1"/>
+</config>
+</config>
