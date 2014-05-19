@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
-<entry key="created_by" type="xstring" value="2.9.2.0041468"/>
+<entry key="created_by" type="xstring" value="2.9.4.0042079"/>
 <entry key="version" type="xstring" value="2.8.0"/>
 <entry key="name" type="xstring" isnull="true" value=""/>
 <config key="authorInformation">
 <entry key="authored-by" type="xstring" value="Administrateur"/>
 <entry key="authored-when" type="xstring" value="2014-04-30 12:47:24 +0200"/>
 <entry key="lastEdited-by" type="xstring" value="julien"/>
-<entry key="lastEdited-when" type="xstring" value="2014-05-15 15:22:13 +0200"/>
+<entry key="lastEdited-when" type="xstring" value="2014-05-19 14:11:35 +0200"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
@@ -236,21 +236,6 @@
 <entry key="0" type="xint" value="740"/>
 <entry key="1" type="xint" value="57"/>
 <entry key="2" type="xint" value="81"/>
-<entry key="3" type="xint" value="79"/>
-</config>
-</config>
-</config>
-<config key="node_50">
-<entry key="id" type="xint" value="50"/>
-<entry key="node_settings_file" type="xstring" value="String Replacer (#50)/settings.xml"/>
-<entry key="node_is_meta" type="xboolean" value="false"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
-<config key="ui_settings">
-<config key="extrainfo.node.bounds">
-<entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="886"/>
-<entry key="1" type="xint" value="40"/>
-<entry key="2" type="xint" value="86"/>
 <entry key="3" type="xint" value="79"/>
 </config>
 </config>

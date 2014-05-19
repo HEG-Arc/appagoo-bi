@@ -1,3 +1,4 @@
+jdbc:sqlserver://157.26.114.58:1433
 jdbc:sqlserver://157.26.114.94:1433;databaseName=DWH
 jdbc:sqlserver://157.26.114.94:1433
 jdbc:sqlserver://<host>:<port>/<database_name>

@@ -12,11 +12,11 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
+<entry key="statement" type="xstring" value="SELECT * FROM Applications"/>
 <entry key="driver" type="xstring" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-<entry key="database" type="xstring" value="jdbc:sqlserver://157.26.114.94:1433"/>
+<entry key="database" type="xstring" value="jdbc:sqlserver://157.26.114.58:1433"/>
 <entry key="credential_name" type="xstring" value="JDITB"/>
 <entry key="timezone" type="xstring" value="current"/>
-<entry key="statement" type="xstring" value="SELECT * FROM Applications"/>
 <entry key="execute_without_configure" type="xboolean" value="false"/>
 </config>
 <config key="nodeAnnotation">
@@ -45,6 +45,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="d29c23fe-e805-40eb-bb5d-a74db55966a4"/>
+<entry key="file_store_id" type="xstring" value="027dc24a-3715-4b2d-863d-0a158752dda1"/>
 </config>
 </config>
