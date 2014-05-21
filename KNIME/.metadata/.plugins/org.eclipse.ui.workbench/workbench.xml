@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="30" version="2.0">
+<workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="176" y="176">
 <fastViewData fastViewLocation="1024"/>
@@ -17,20 +17,12 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="2: KNIME_PLAYGET" title="2: KNIME_PLAYGET" tooltip="2: KNIME_PLAYGET" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="0: KNIME_PLAYGET" title="0: KNIME_PLAYGET" tooltip="0: KNIME_PLAYGET" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
-</editor>
-<editor activePart="true" focus="true" id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="0: KNIME_ETL_DIMEDITOR" title="0: KNIME_ETL_DIMEDITOR" tooltip="0: KNIME_ETL_DIMEDITOR" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/KNIME_ETL_DIMEDITOR/workflow.knime"/>
-</editor>
-<editor id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="3: Exemple_RechercheStringKeywords" title="3: Exemple_RechercheStringKeywords" tooltip="3: Exemple_RechercheStringKeywords" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 </editor>
 </editors>
 <views>
@@ -159,62 +151,56 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_project/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/email-addresses/workflow.knime"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_ETL/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_ETL_DIMEDITOR/workflow.knime"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 </editors>
-<item historyLabel="2: KNIME_project" index="0"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="3: email-addresses" index="2"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_project" index="0"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL" index="3"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL" index="3"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL" index="3"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="3: Exemple_RechercheStringKeywords" index="5"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="0: KNIME_PLAYGET" index="1"/>
-<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="2: KNIME_PLAYGET" index="6"/>
-<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="2: KNIME_PLAYGET" index="6"/>
-<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="2: KNIME_PLAYGET" index="6"/>
-<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="2: KNIME_PLAYGET" index="6"/>
-<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="2: KNIME_PLAYGET" index="6"/>
-<item historyLabel="3: Exemple_RechercheStringKeywords" index="7"/>
-<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
-<item historyLabel="2: KNIME_PLAYGET" index="6"/>
-<item historyLabel="2: KNIME_PLAYGET" index="6"/>
-<item active="true" historyLabel="0: KNIME_ETL_DIMEDITOR" index="4"/>
+<item historyLabel="0: KNIME_PLAYGET" index="0"/>
+<item historyLabel="2: KNIME_ETL_DIMEDITOR" index="1"/>
+<item historyLabel="2: KNIME_PLAYGET" index="2"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="1"/>
+<item historyLabel="2: KNIME_PLAYGET" index="2"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="1"/>
+<item historyLabel="2: KNIME_PLAYGET" index="2"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="1"/>
+<item historyLabel="2: KNIME_PLAYGET" index="2"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="1"/>
+<item historyLabel="2: KNIME_PLAYGET" index="2"/>
+<item historyLabel="3: Exemple_RechercheStringKeywords" index="3"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="1"/>
+<item historyLabel="2: KNIME_PLAYGET" index="2"/>
+<item historyLabel="2: KNIME_PLAYGET" index="2"/>
+<item historyLabel="0: KNIME_ETL_DIMEDITOR" index="1"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="0: Exemple_RechercheStringKeywords" index="5"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="0: Exemple_RechercheStringKeywords" index="5"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="0: Exemple_RechercheStringKeywords" index="5"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="0: Exemple_RechercheStringKeywords" index="5"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="0: Exemple_RechercheStringKeywords" index="5"/>
+<item historyLabel="2: KNIME_PLAYGET" index="4"/>
+<item historyLabel="2: Exemple_RechercheStringKeywords" index="6"/>
+<item historyLabel="2: Exemple_RechercheStringKeywords" index="6"/>
+<item historyLabel="2: Exemple_RechercheStringKeywords" index="6"/>
+<item historyLabel="0: KNIME_PLAYGET" index="4"/>
+<item historyLabel="0: KNIME_PLAYGET" index="4"/>
+<item active="true" historyLabel="0: KNIME_PLAYGET" index="4"/>
 </navigationHistory>
 </page>
 <workbenchWindowAdvisor/>

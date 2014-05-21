@@ -41,7 +41,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="RegEx" type="xstring" value="[!#$%&amp;'\&quot;*+,.\?:;\(\)&quot;/=(--)&gt;&lt;]+"/>
+<entry key="RegEx" type="xstring" value="[!#$%&amp;'\&quot;*+,.\?:;\(\)&quot;/=(--)&gt;&lt;\\]+"/>
 <config key="Replacement_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -74,6 +74,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" value="filestore"/>
-<entry key="file_store_id" type="xstring" value="f35d8c3d-a337-4bb5-8df7-faacb036742f"/>
+<entry key="file_store_id" type="xstring" value="b369ac0d-04ab-44d1-9399-19cf4334d6a7"/>
 </config>
 </config>

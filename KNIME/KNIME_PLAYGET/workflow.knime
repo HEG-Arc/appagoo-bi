@@ -7,10 +7,10 @@
 <entry key="authored-by" type="xstring" value="Administrateur"/>
 <entry key="authored-when" type="xstring" value="2014-04-30 12:47:24 +0200"/>
 <entry key="lastEdited-by" type="xstring" value="julien"/>
-<entry key="lastEdited-when" type="xstring" value="2014-05-19 14:11:35 +0200"/>
+<entry key="lastEdited-when" type="xstring" value="2014-05-20 15:25:23 +0200"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="IDLE"/>
+<entry key="state" type="xstring" value="EXECUTED"/>
 <config key="workflow_credentials">
 <config key="JDITB">
 <entry key="name" type="xstring" value="JDITB"/>
@@ -180,51 +180,6 @@
 </config>
 </config>
 </config>
-<config key="node_41">
-<entry key="id" type="xint" value="41"/>
-<entry key="node_settings_file" type="xstring" value="Row Filter (#41)/settings.xml"/>
-<entry key="node_is_meta" type="xboolean" value="false"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
-<config key="ui_settings">
-<config key="extrainfo.node.bounds">
-<entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="999"/>
-<entry key="1" type="xint" value="335"/>
-<entry key="2" type="xint" value="57"/>
-<entry key="3" type="xint" value="79"/>
-</config>
-</config>
-</config>
-<config key="node_44">
-<entry key="id" type="xint" value="44"/>
-<entry key="node_settings_file" type="xstring" value="TableRow To Variable Loop Start (#44)/settings.xml"/>
-<entry key="node_is_meta" type="xboolean" value="false"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
-<config key="ui_settings">
-<config key="extrainfo.node.bounds">
-<entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="937"/>
-<entry key="1" type="xint" value="182"/>
-<entry key="2" type="xint" value="105"/>
-<entry key="3" type="xint" value="94"/>
-</config>
-</config>
-</config>
-<config key="node_45">
-<entry key="id" type="xint" value="45"/>
-<entry key="node_settings_file" type="xstring" value="Loop End (#45)/settings.xml"/>
-<entry key="node_is_meta" type="xboolean" value="false"/>
-<entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
-<config key="ui_settings">
-<config key="extrainfo.node.bounds">
-<entry key="array-size" type="xint" value="4"/>
-<entry key="0" type="xint" value="1095"/>
-<entry key="1" type="xint" value="335"/>
-<entry key="2" type="xint" value="50"/>
-<entry key="3" type="xint" value="79"/>
-</config>
-</config>
-</config>
 <config key="node_48">
 <entry key="id" type="xint" value="48"/>
 <entry key="node_settings_file" type="xstring" value="Term to String (#48)/settings.xml"/>
@@ -318,18 +273,6 @@
 <entry key="destPort" type="xint" value="1"/>
 </config>
 <config key="connection_8">
-<entry key="sourceID" type="xint" value="41"/>
-<entry key="destID" type="xint" value="45"/>
-<entry key="sourcePort" type="xint" value="1"/>
-<entry key="destPort" type="xint" value="1"/>
-</config>
-<config key="connection_9">
-<entry key="sourceID" type="xint" value="44"/>
-<entry key="destID" type="xint" value="41"/>
-<entry key="sourcePort" type="xint" value="1"/>
-<entry key="destPort" type="xint" value="0"/>
-</config>
-<config key="connection_10">
 <entry key="sourceID" type="xint" value="48"/>
 <entry key="destID" type="xint" value="51"/>
 <entry key="sourcePort" type="xint" value="1"/>
