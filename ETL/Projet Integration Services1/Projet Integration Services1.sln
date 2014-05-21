@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Projet Integration Services1", "Projet Integration Services1\Projet Integration Services1.dtproj", "{B900E313-1933-4337-9A1C-B9F2A44724F0}"
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "PlayGet_ETL", "Projet Integration Services1\PlayGet_ETL.dtproj", "{B900E313-1933-4337-9A1C-B9F2A44724F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
