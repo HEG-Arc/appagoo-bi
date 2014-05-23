@@ -4,10 +4,10 @@
 <frequents>
 <favorite frequency="1" nodeid="org.knime.base.node.io.database.DBWriterNodeFactory"/>
 <favorite frequency="1" nodeid="org.knime.ext.sun.nodes.script.node.rowsplitter.JavaRowSplitterNodeFactory"/>
-<favorite frequency="1" nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesDBNodeFactory"/>
 <favorite frequency="5" nodeid="org.knime.ext.textprocessing.nodes.preprocessing.replacer.RegExReplacerNodeFactory"/>
-<favorite frequency="6" nodeid="org.knime.base.node.io.database.DBQueryNodeFactory2"/>
+<favorite frequency="1" nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesDBNodeFactory"/>
 <favorite frequency="2" nodeid="org.knime.base.node.preproc.joiner.Joiner2NodeFactory"/>
+<favorite frequency="6" nodeid="org.knime.base.node.io.database.DBQueryNodeFactory2"/>
 <favorite frequency="1" nodeid="org.knime.base.node.preproc.ungroup.UngroupNodeFactory"/>
 <favorite frequency="1" nodeid="org.knime.ext.sun.nodes.script.JavaScriptingNodeFactory"/>
 <favorite frequency="2" nodeid="org.knime.base.node.io.database.DBReaderNodeFactory"/>
@@ -27,24 +27,24 @@
 <favorite frequency="2" nodeid="ws.palladian.nodes.helper.UrlExtractorNodeFactory"/>
 <favorite frequency="1" nodeid="org.knime.base.node.jsnippet.JavaEditVarNodeFactory"/>
 <favorite frequency="3" nodeid="org.knime.base.node.preproc.filter.row.RowFilterNodeFactory"/>
-<favorite frequency="2" nodeid="org.knime.base.node.flowvariable.appendvariabletotable2.AppendVariableToTable2NodeFactory"/>
 <favorite frequency="1" nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.flowvariable.appendvariabletotable2.AppendVariableToTable2NodeFactory"/>
 <favorite frequency="2" nodeid="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
 <favorite frequency="2" nodeid="org.knime.base.node.preproc.sorter.SorterNodeFactory"/>
 <favorite frequency="1" nodeid="org.knime.base.node.io.database.DatabaseLoopingNodeFactory"/>
-<favorite frequency="1" nodeid="org.knime.base.node.preproc.cellsplit.CellSplitterNodeFactory"/>
 <favorite frequency="1" nodeid="org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.preproc.cellsplit.CellSplitterNodeFactory"/>
 </frequents>
 <lastused>
-<favorite nodeid="org.knime.base.node.io.database.DBQueryNodeFactory2"/>
-<favorite nodeid="org.knime.base.node.io.database.DBReaderConnectionNodeFactory"/>
-<favorite nodeid="org.knime.base.node.io.database.DatabaseLoopingNodeFactory"/>
-<favorite nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesDBNodeFactory"/>
-<favorite nodeid="org.knime.base.node.io.database.DBReaderNodeFactory"/>
-<favorite nodeid="org.knime.base.node.flowvariable.variableloophead.LoopStartVariableNodeFactory"/>
-<favorite nodeid="org.knime.base.node.meta.looper.LoopEndNodeFactory"/>
-<favorite nodeid="org.knime.ext.sun.nodes.script.JavaScriptingNodeFactory"/>
-<favorite nodeid="org.knime.ext.sun.nodes.script.node.rowfilter.JavaRowFilterNodeFactory"/>
 <favorite nodeid="org.knime.ext.textprocessing.nodes.preprocessing.regexfilter.RegExFilterNodeFactory"/>
+<favorite nodeid="org.knime.ext.sun.nodes.script.node.rowfilter.JavaRowFilterNodeFactory"/>
+<favorite nodeid="org.knime.ext.sun.nodes.script.JavaScriptingNodeFactory"/>
+<favorite nodeid="org.knime.base.node.meta.looper.LoopEndNodeFactory"/>
+<favorite nodeid="org.knime.base.node.flowvariable.variableloophead.LoopStartVariableNodeFactory"/>
+<favorite nodeid="org.knime.base.node.io.database.DBReaderNodeFactory"/>
+<favorite nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesDBNodeFactory"/>
+<favorite nodeid="org.knime.base.node.io.database.DatabaseLoopingNodeFactory"/>
+<favorite nodeid="org.knime.base.node.io.database.DBReaderConnectionNodeFactory"/>
+<favorite nodeid="org.knime.base.node.io.database.DBQueryNodeFactory2"/>
 </lastused>
 </favoritenodes>
