@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<favoritenodes>
+<personals/>
+<frequents>
+<favorite frequency="1" nodeid="org.knime.base.node.io.database.DBWriterNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.ext.sun.nodes.script.node.rowsplitter.JavaRowSplitterNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesDBNodeFactory"/>
+<favorite frequency="5" nodeid="org.knime.ext.textprocessing.nodes.preprocessing.replacer.RegExReplacerNodeFactory"/>
+<favorite frequency="6" nodeid="org.knime.base.node.io.database.DBQueryNodeFactory2"/>
+<favorite frequency="2" nodeid="org.knime.base.node.preproc.joiner.Joiner2NodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.preproc.ungroup.UngroupNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.ext.sun.nodes.script.JavaScriptingNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.io.database.DBReaderNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.meta.looper.LoopEndNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.ext.textprocessing.nodes.preprocessing.dictreplacer.twoinports.DictionaryReplacer2InPortsNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.preproc.caseconvert.CaseConvertNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.ext.textprocessing.nodes.transformation.termvector.TermVectorNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.flowvariable.tablerowtovariable.TableToVariableNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.preproc.missingval.MissingValueHandling3NodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.preproc.groupby.GroupByNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.ext.sun.nodes.script.node.rowfilter.JavaRowFilterNodeFactory"/>
+<favorite frequency="6" nodeid="org.knime.base.node.io.database.DBReaderConnectionNodeFactory"/>
+<favorite frequency="3" nodeid="org.knime.base.node.flowvariable.variableloophead.LoopStartVariableNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.ext.textprocessing.nodes.preprocessing.regexfilter.RegExFilterNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.preproc.rename.RenameNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.mine.svm.predictor2.SVMPredictorNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.preproc.stringreplacer.StringReplacerNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.jsnippet.JavaSnippetNodeFactory"/>
+<favorite frequency="2" nodeid="ws.palladian.nodes.helper.UrlExtractorNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.jsnippet.JavaEditVarNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.ext.textprocessing.nodes.transformation.documentvector.DocumentVectorNodeFactory"/>
+<favorite frequency="3" nodeid="org.knime.base.node.preproc.filter.row.RowFilterNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.flowvariable.appendvariabletotable2.AppendVariableToTable2NodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+<favorite frequency="2" nodeid="org.knime.base.node.preproc.sorter.SorterNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.io.database.DatabaseLoopingNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.mine.svm.learner.SVMLearnerNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.base.node.preproc.cellsplit.CellSplitterNodeFactory"/>
+<favorite frequency="1" nodeid="org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeFactory"/>
+</frequents>
+<lastused>
+<favorite nodeid="org.knime.base.node.mine.svm.predictor2.SVMPredictorNodeFactory"/>
+<favorite nodeid="org.knime.ext.textprocessing.nodes.transformation.termvector.TermVectorNodeFactory"/>
+<favorite nodeid="org.knime.ext.textprocessing.nodes.transformation.documentvector.DocumentVectorNodeFactory"/>
+<favorite nodeid="org.knime.base.node.mine.svm.learner.SVMLearnerNodeFactory"/>
+<favorite nodeid="org.knime.base.node.io.database.DBQueryNodeFactory2"/>
+<favorite nodeid="org.knime.base.node.io.database.DBReaderConnectionNodeFactory"/>
+<favorite nodeid="org.knime.base.node.io.database.DatabaseLoopingNodeFactory"/>
+<favorite nodeid="org.knime.base.node.flowvariable.injectvariables.InjectVariablesDBNodeFactory"/>
+<favorite nodeid="org.knime.base.node.io.database.DBReaderNodeFactory"/>
+<favorite nodeid="org.knime.base.node.flowvariable.variableloophead.LoopStartVariableNodeFactory"/>
+</lastused>
+</favoritenodes>
