@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
-    <Name>Projet Integration Services1</Name>
-    <LastWriteTime>2014-05-15T08:05:24.2218803Z</LastWriteTime>
+    <Name>PlayGet_ETL</Name>
+    <LastWriteTime>2014-05-27T07:06:10.177738Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Package.dtsx</Name>
-      <LastWriteTime>2014-05-21T08:02:50.0226781Z</LastWriteTime>
+      <LastWriteTime>2014-05-27T07:06:10.0841379Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

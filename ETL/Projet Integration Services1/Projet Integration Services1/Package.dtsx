@@ -11,11 +11,21 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="96"
-  DTS:VersionGUID="{56F25F2A-2A10-4A18-A293-F512F36E25B4}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{4CA8A437-D548-4457-85B8-5B9510FCFA14}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5D19324E-CC79-41DF-A297-CEAF68FC28B5}"
+      DTS:ObjectName="Gestionnaire de connexions Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Administrateur\Desktop\features.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[TBJDI.STG]"
       DTS:CreationName="OLEDB"
@@ -1387,14 +1397,14 @@
               startId="Package\DimAmmountInstallations\Fractionnement conditionnel.Outputs[Ajout]" />
             <path
               refId="Package\DimAmmountInstallations.Paths[Sortie de colonne dérivée1]"
-              endId="Package\DimAmmountInstallations\Supprime les virgules.Inputs[Entrée de colonne dérivée]"
-              name="Sortie de colonne dérivée"
-              startId="Package\DimAmmountInstallations\Extrait upLimit et downLimit.Outputs[Sortie de colonne dérivée]" />
-            <path
-              refId="Package\DimAmmountInstallations.Paths[Sortie de colonne dérivée]"
               endId="Package\DimAmmountInstallations\Conversion de données.Inputs[Entrée de conversion de données]"
               name="Sortie de colonne dérivée"
               startId="Package\DimAmmountInstallations\Supprime les virgules.Outputs[Sortie de colonne dérivée]" />
+            <path
+              refId="Package\DimAmmountInstallations.Paths[Sortie de colonne dérivée]"
+              endId="Package\DimAmmountInstallations\Supprime les virgules.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de colonne dérivée"
+              startId="Package\DimAmmountInstallations\Extrait upLimit et downLimit.Outputs[Sortie de colonne dérivée]" />
             <path
               refId="Package\DimAmmountInstallations.Paths[Sortie de conversion de données]"
               endId="Package\DimAmmountInstallations\Trier.Inputs[Entrée de tri]"
@@ -1407,19 +1417,19 @@
               startId="Package\DimAmmountInstallations\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
               refId="Package\DimAmmountInstallations.Paths[Sortie de source OLE DB1]"
-              endId="Package\DimAmmountInstallations\Trier 1.Inputs[Entrée de tri]"
-              name="Sortie de source OLE DB"
-              startId="Package\DimAmmountInstallations\DWH DimAmmountInstallations.Outputs[Sortie de source OLE DB]" />
-            <path
-              refId="Package\DimAmmountInstallations.Paths[Sortie de source OLE DB]"
               endId="Package\DimAmmountInstallations\Supprime doublons.Inputs[Entrée de tri]"
               name="Sortie de source OLE DB"
               startId="Package\DimAmmountInstallations\STG ammountInstallations.Outputs[Sortie de source OLE DB]" />
             <path
+              refId="Package\DimAmmountInstallations.Paths[Sortie de source OLE DB]"
+              endId="Package\DimAmmountInstallations\Trier 1.Inputs[Entrée de tri]"
+              name="Sortie de source OLE DB"
+              startId="Package\DimAmmountInstallations\DWH DimAmmountInstallations.Outputs[Sortie de source OLE DB]" />
+            <path
               refId="Package\DimAmmountInstallations.Paths[Sortie de tri2]"
-              endId="Package\DimAmmountInstallations\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
+              endId="Package\DimAmmountInstallations\Extrait upLimit et downLimit.Inputs[Entrée de colonne dérivée]"
               name="Sortie de tri"
-              startId="Package\DimAmmountInstallations\Trier 1.Outputs[Sortie de tri]" />
+              startId="Package\DimAmmountInstallations\Supprime doublons.Outputs[Sortie de tri]" />
             <path
               refId="Package\DimAmmountInstallations.Paths[Sortie de tri1]"
               endId="Package\DimAmmountInstallations\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
@@ -1427,9 +1437,9 @@
               startId="Package\DimAmmountInstallations\Trier.Outputs[Sortie de tri]" />
             <path
               refId="Package\DimAmmountInstallations.Paths[Sortie de tri]"
-              endId="Package\DimAmmountInstallations\Extrait upLimit et downLimit.Inputs[Entrée de colonne dérivée]"
+              endId="Package\DimAmmountInstallations\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
               name="Sortie de tri"
-              startId="Package\DimAmmountInstallations\Supprime doublons.Outputs[Sortie de tri]" />
+              startId="Package\DimAmmountInstallations\Trier 1.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2421,24 +2431,24 @@
               startId="Package\DimCategory\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
               refId="Package\DimCategory.Paths[Sortie de source OLE DB1]"
-              endId="Package\DimCategory\MAJ.Inputs[Entrée de colonne dérivée]"
-              name="Sortie de source OLE DB"
-              startId="Package\DimCategory\STG categoryLabel.Outputs[Sortie de source OLE DB]" />
-            <path
-              refId="Package\DimCategory.Paths[Sortie de source OLE DB]"
               endId="Package\DimCategory\Trier 1.Inputs[Entrée de tri]"
               name="Sortie de source OLE DB"
               startId="Package\DimCategory\Source OLE DB.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimCategory.Paths[Sortie de tri1]"
-              endId="Package\DimCategory\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
-              name="Sortie de tri"
-              startId="Package\DimCategory\Trier 1.Outputs[Sortie de tri]" />
+              refId="Package\DimCategory.Paths[Sortie de source OLE DB]"
+              endId="Package\DimCategory\MAJ.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de source OLE DB"
+              startId="Package\DimCategory\STG categoryLabel.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimCategory.Paths[Sortie de tri]"
+              refId="Package\DimCategory.Paths[Sortie de tri1]"
               endId="Package\DimCategory\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
               name="Sortie de tri"
               startId="Package\DimCategory\Trier.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\DimCategory.Paths[Sortie de tri]"
+              endId="Package\DimCategory\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
+              name="Sortie de tri"
+              startId="Package\DimCategory\Trier 1.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3480,14 +3490,14 @@
               startId="Package\DimContentCategory\Fractionnement conditionnel.Outputs[Ajoute]" />
             <path
               refId="Package\DimContentCategory.Paths[Sortie de colonne dérivée1]"
-              endId="Package\DimContentCategory\UNKNOWN.Inputs[Entrée de colonne dérivée]"
-              name="Sortie de colonne dérivée"
-              startId="Package\DimContentCategory\MAJ.Outputs[Sortie de colonne dérivée]" />
-            <path
-              refId="Package\DimContentCategory.Paths[Sortie de colonne dérivée]"
               endId="Package\DimContentCategory\Raccourci.Inputs[Entrée de conversion de données]"
               name="Sortie de colonne dérivée"
               startId="Package\DimContentCategory\UNKNOWN.Outputs[Sortie de colonne dérivée]" />
+            <path
+              refId="Package\DimContentCategory.Paths[Sortie de colonne dérivée]"
+              endId="Package\DimContentCategory\UNKNOWN.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de colonne dérivée"
+              startId="Package\DimContentCategory\MAJ.Outputs[Sortie de colonne dérivée]" />
             <path
               refId="Package\DimContentCategory.Paths[Sortie de conversion de données]"
               endId="Package\DimContentCategory\Trier.Inputs[Entrée de tri]"
@@ -3500,24 +3510,24 @@
               startId="Package\DimContentCategory\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
               refId="Package\DimContentCategory.Paths[Sortie de source OLE DB1]"
-              endId="Package\DimContentCategory\Trier 1.Inputs[Entrée de tri]"
-              name="Sortie de source OLE DB"
-              startId="Package\DimContentCategory\DWH DimContentCategory.Outputs[Sortie de source OLE DB]" />
-            <path
-              refId="Package\DimContentCategory.Paths[Sortie de source OLE DB]"
               endId="Package\DimContentCategory\MAJ.Inputs[Entrée de colonne dérivée]"
               name="Sortie de source OLE DB"
               startId="Package\DimContentCategory\STG contentCategory.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimContentCategory.Paths[Sortie de tri1]"
-              endId="Package\DimContentCategory\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
-              name="Sortie de tri"
-              startId="Package\DimContentCategory\Trier.Outputs[Sortie de tri]" />
+              refId="Package\DimContentCategory.Paths[Sortie de source OLE DB]"
+              endId="Package\DimContentCategory\Trier 1.Inputs[Entrée de tri]"
+              name="Sortie de source OLE DB"
+              startId="Package\DimContentCategory\DWH DimContentCategory.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimContentCategory.Paths[Sortie de tri]"
+              refId="Package\DimContentCategory.Paths[Sortie de tri1]"
               endId="Package\DimContentCategory\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
               name="Sortie de tri"
               startId="Package\DimContentCategory\Trier 1.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\DimContentCategory.Paths[Sortie de tri]"
+              endId="Package\DimContentCategory\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
+              name="Sortie de tri"
+              startId="Package\DimContentCategory\Trier.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -7436,34 +7446,34 @@ WHERE [packageName]=?</property>
               startId="Package\DimDescription\Fractionnement conditionnel.Outputs[Modification]" />
             <path
               refId="Package\DimDescription.Paths[Sortie de colonne dérivée2]"
-              endId="Package\DimDescription\Taille string.Inputs[Entrée de conversion de données]"
-              name="Sortie de colonne dérivée"
-              startId="Package\DimDescription\MAJ packageName.Outputs[Sortie de colonne dérivée]" />
-            <path
-              refId="Package\DimDescription.Paths[Sortie de colonne dérivée3]"
-              endId="Package\DimDescription\Conversions.Inputs[Entrée de conversion de données]"
-              name="Sortie de colonne dérivée"
-              startId="Package\DimDescription\Préparation conversion - separateur.Outputs[Sortie de colonne dérivée]" />
-            <path
-              refId="Package\DimDescription.Paths[Sortie de colonne dérivée]"
               endId="Package\DimDescription\Préparation conversion - Null.Inputs[Entrée de colonne dérivée]"
               name="Sortie de colonne dérivée"
               startId="Package\DimDescription\Substr Dates.Outputs[Sortie de colonne dérivée]" />
             <path
-              refId="Package\DimDescription.Paths[Sortie de colonne dérivée1]"
+              refId="Package\DimDescription.Paths[Sortie de colonne dérivée3]"
               endId="Package\DimDescription\Préparation conversion - separateur.Inputs[Entrée de colonne dérivée]"
               name="Sortie de colonne dérivée"
               startId="Package\DimDescription\Préparation conversion - Null.Outputs[Sortie de colonne dérivée]" />
             <path
-              refId="Package\DimDescription.Paths[Sortie de conversion de données1]"
-              endId="Package\DimDescription\Substr Dates.Inputs[Entrée de colonne dérivée]"
-              name="Sortie de conversion de données"
-              startId="Package\DimDescription\Taille string.Outputs[Sortie de conversion de données]" />
+              refId="Package\DimDescription.Paths[Sortie de colonne dérivée]"
+              endId="Package\DimDescription\Taille string.Inputs[Entrée de conversion de données]"
+              name="Sortie de colonne dérivée"
+              startId="Package\DimDescription\MAJ packageName.Outputs[Sortie de colonne dérivée]" />
             <path
-              refId="Package\DimDescription.Paths[Sortie de conversion de données]"
+              refId="Package\DimDescription.Paths[Sortie de colonne dérivée1]"
+              endId="Package\DimDescription\Conversions.Inputs[Entrée de conversion de données]"
+              name="Sortie de colonne dérivée"
+              startId="Package\DimDescription\Préparation conversion - separateur.Outputs[Sortie de colonne dérivée]" />
+            <path
+              refId="Package\DimDescription.Paths[Sortie de conversion de données1]"
               endId="Package\DimDescription\Trier.Inputs[Entrée de tri]"
               name="Sortie de conversion de données"
               startId="Package\DimDescription\Conversions.Outputs[Sortie de conversion de données]" />
+            <path
+              refId="Package\DimDescription.Paths[Sortie de conversion de données]"
+              endId="Package\DimDescription\Substr Dates.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de conversion de données"
+              startId="Package\DimDescription\Taille string.Outputs[Sortie de conversion de données]" />
             <path
               refId="Package\DimDescription.Paths[Sortie de jointure de fusion]"
               endId="Package\DimDescription\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel]"
@@ -7471,24 +7481,24 @@ WHERE [packageName]=?</property>
               startId="Package\DimDescription\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
               refId="Package\DimDescription.Paths[Sortie de source OLE DB1]"
-              endId="Package\DimDescription\Trier 1.Inputs[Entrée de tri]"
-              name="Sortie de source OLE DB"
-              startId="Package\DimDescription\DWH DimDescription.Outputs[Sortie de source OLE DB]" />
-            <path
-              refId="Package\DimDescription.Paths[Sortie de source OLE DB]"
               endId="Package\DimDescription\MAJ packageName.Inputs[Entrée de colonne dérivée]"
               name="Sortie de source OLE DB"
               startId="Package\DimDescription\STG.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimDescription.Paths[Sortie de tri1]"
-              endId="Package\DimDescription\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
-              name="Sortie de tri"
-              startId="Package\DimDescription\Trier.Outputs[Sortie de tri]" />
+              refId="Package\DimDescription.Paths[Sortie de source OLE DB]"
+              endId="Package\DimDescription\Trier 1.Inputs[Entrée de tri]"
+              name="Sortie de source OLE DB"
+              startId="Package\DimDescription\DWH DimDescription.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimDescription.Paths[Sortie de tri]"
+              refId="Package\DimDescription.Paths[Sortie de tri1]"
               endId="Package\DimDescription\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
               name="Sortie de tri"
               startId="Package\DimDescription\Trier 1.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\DimDescription.Paths[Sortie de tri]"
+              endId="Package\DimDescription\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
+              name="Sortie de tri"
+              startId="Package\DimDescription\Trier.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -8410,26 +8420,41 @@ WHERE [packageName]=?</property>
               startId="Package\DimEditor\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
               refId="Package\DimEditor.Paths[Sortie de source OLE DB1]"
-              endId="Package\DimEditor\MAJ EDITOR.Inputs[Entrée de colonne dérivée]"
-              name="Sortie de source OLE DB"
-              startId="Package\DimEditor\STG editor.Outputs[Sortie de source OLE DB]" />
-            <path
-              refId="Package\DimEditor.Paths[Sortie de source OLE DB]"
               endId="Package\DimEditor\Trier name.Inputs[Entrée de tri]"
               name="Sortie de source OLE DB"
               startId="Package\DimEditor\DWH DimEditor.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimEditor.Paths[Sortie de tri1]"
-              endId="Package\DimEditor\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
-              name="Sortie de tri"
-              startId="Package\DimEditor\Trier editor.Outputs[Sortie de tri]" />
+              refId="Package\DimEditor.Paths[Sortie de source OLE DB]"
+              endId="Package\DimEditor\MAJ EDITOR.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de source OLE DB"
+              startId="Package\DimEditor\STG editor.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimEditor.Paths[Sortie de tri]"
+              refId="Package\DimEditor.Paths[Sortie de tri1]"
               endId="Package\DimEditor\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
               name="Sortie de tri"
               startId="Package\DimEditor\Trier name.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\DimEditor.Paths[Sortie de tri]"
+              endId="Package\DimEditor\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
+              name="Sortie de tri"
+              startId="Package\DimEditor\Trier editor.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DimFunctionality"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{9BC3928D-8766-4BD6-9CB2-78BC66CAA0ED}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DimFunctionality"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -10305,30 +10330,516 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               name="Sortie de jointure de fusion"
               startId="Package\DimPermission\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
-              refId="Package\DimPermission.Paths[Sortie de source OLE DB]"
-              endId="Package\DimPermission\Unique.Inputs[Entrée de tri]"
-              name="Sortie de source OLE DB"
-              startId="Package\DimPermission\STG Permissions.Outputs[Sortie de source OLE DB]" />
-            <path
               refId="Package\DimPermission.Paths[Sortie de source OLE DB1]"
               endId="Package\DimPermission\Trier 1.Inputs[Entrée de tri]"
               name="Sortie de source OLE DB"
               startId="Package\DimPermission\DWH DimPermission.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\DimPermission.Paths[Sortie de tri1]"
-              endId="Package\DimPermission\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
-              name="Sortie de tri"
-              startId="Package\DimPermission\Trier 3.Outputs[Sortie de tri]" />
-            <path
-              refId="Package\DimPermission.Paths[Sortie de tri]"
-              endId="Package\DimPermission\MAJ.Inputs[Entrée de colonne dérivée]"
-              name="Sortie de tri"
-              startId="Package\DimPermission\Unique.Outputs[Sortie de tri]" />
+              refId="Package\DimPermission.Paths[Sortie de source OLE DB]"
+              endId="Package\DimPermission\Unique.Inputs[Entrée de tri]"
+              name="Sortie de source OLE DB"
+              startId="Package\DimPermission\STG Permissions.Outputs[Sortie de source OLE DB]" />
             <path
               refId="Package\DimPermission.Paths[Sortie de tri2]"
               endId="Package\DimPermission\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
               name="Sortie de tri"
               startId="Package\DimPermission\Trier 1.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\DimPermission.Paths[Sortie de tri1]"
+              endId="Package\DimPermission\MAJ.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de tri"
+              startId="Package\DimPermission\Unique.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\DimPermission.Paths[Sortie de tri]"
+              endId="Package\DimPermission\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
+              name="Sortie de tri"
+              startId="Package\DimPermission\Trier 3.Outputs[Sortie de tri]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tâche de flux de données"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{441180E9-FFBD-4C19-8E74-6B5247B5D4EC}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tâche de flux de données"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tâche de flux de données\Destination Excel"
+              componentClassID="{1F5D5712-2FBA-4CB9-A95A-86C1F336E1DA}"
+              contactInfo="Destination Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Destination Excel"
+              name="Destination Excel"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande. Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">Destination_Excel</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données. Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tâche de flux de données\Destination Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions Excel]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination Excel">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].Columns[number]"
+                      cachedDataType="i4"
+                      cachedName="number"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[number]"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[number]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].Columns[label]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="label"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[label]"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[label]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].Columns[description]"
+                      cachedDataType="nText"
+                      cachedName="description"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[description]"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[description]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].Columns[interesting]"
+                      cachedDataType="i4"
+                      cachedName="interesting"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[interesting]"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[interesting]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[number]"
+                      dataType="r8"
+                      name="number" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[label]"
+                      dataType="nText"
+                      name="label" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[description]"
+                      dataType="nText"
+                      name="description" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[interesting]"
+                      dataType="r8"
+                      name="interesting" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tâche de flux de données\Destination Excel.Outputs[Sortie d'erreur de destination Excel]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination Excel"
+                  synchronousInputId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tâche de flux de données\Source OLE DB"
+              componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+              contactInfo="Source OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;7"
+              description="Source OLE DB"
+              name="Source OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande. Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[dbo].[DimFunctionality]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable contenant la commande SQL à exécuter."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données de caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Mappages entre les paramètres de la commande SQL et les variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tâche de flux de données\Source OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="{9773C67D-27EF-4B07-B761-FE264633733D}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TBJDI.DWH]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB]"
+                  name="Sortie de source OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[number]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[number]"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[number]"
+                      name="number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[label]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[label]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[label]"
+                      name="label"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[description]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[description]"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[description]"
+                      name="description"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[interesting]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[interesting]"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[interesting]"
+                      name="interesting"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[number]"
+                      dataType="i4"
+                      name="number" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[label]"
+                      dataType="wstr"
+                      length="255"
+                      name="label" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[description]"
+                      dataType="nText"
+                      name="description" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[interesting]"
+                      dataType="i4"
+                      name="interesting" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[number]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[number]"
+                      name="number" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[label]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[label]"
+                      name="label" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[description]"
+                      dataType="nText"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[description]"
+                      name="description" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[interesting]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[interesting]"
+                      name="interesting" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tâche de flux de données\Trier"
+              componentClassID="{5B1A3FF5-D366-4D75-AD1F-F19A36FCBEDB}"
+              contactInfo="Trier;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Trie les données d'entrée en ordre croissant ou décroissant lorsque le tri ne peut pas être effectué à la source. Par exemple, triez les données de vente par 'id de client' avant leur enregistrement dans un fichier plat et leur diffusion dans un autre service. Remarque : nous ne recommandons pas cette transformation dans le cas de flux de données volumineux."
+              name="Trier"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si la transformation de tri supprime les lignes comportant des valeurs de tri en double."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le nombre maximal de threads à utiliser pour le tri."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Tâche de flux de données\Trier.Inputs[Entrée de tri]"
+                  name="Entrée de tri">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Trier.Inputs[Entrée de tri].Columns[number]"
+                      cachedDataType="i4"
+                      cachedName="number"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[number]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie les options de comparaison pour les données de caractères."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie l'ordre de tri de la colonne."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Trier.Inputs[Entrée de tri].Columns[label]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="label"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[label]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie les options de comparaison pour les données de caractères."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie l'ordre de tri de la colonne."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Trier.Inputs[Entrée de tri].Columns[description]"
+                      cachedDataType="nText"
+                      cachedName="description"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[description]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie les options de comparaison pour les données de caractères."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie l'ordre de tri de la colonne."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\Trier.Inputs[Entrée de tri].Columns[interesting]"
+                      cachedDataType="i4"
+                      cachedName="interesting"
+                      lineageId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[interesting]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie les options de comparaison pour les données de caractères."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Spécifie l'ordre de tri de la colonne."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri]"
+                  isSorted="true"
+                  name="Sortie de tri">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[number]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[number]"
+                      name="number">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Spécifie l'identificateur de lignage de la colonne d'entrée associé à cette colonne de sortie."
+                          name="SortColumnId">#{Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[number]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[label]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[label]"
+                      name="label">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Spécifie l'identificateur de lignage de la colonne d'entrée associé à cette colonne de sortie."
+                          name="SortColumnId">#{Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[label]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[description]"
+                      dataType="nText"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[description]"
+                      name="description">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Spécifie l'identificateur de lignage de la colonne d'entrée associé à cette colonne de sortie."
+                          name="SortColumnId">#{Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[description]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[interesting]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri].Columns[interesting]"
+                      name="interesting"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Spécifie l'identificateur de lignage de la colonne d'entrée associé à cette colonne de sortie."
+                          name="SortColumnId">#{Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[interesting]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tâche de flux de données.Paths[Sortie de source OLE DB]"
+              endId="Package\Tâche de flux de données\Trier.Inputs[Entrée de tri]"
+              name="Sortie de source OLE DB"
+              startId="Package\Tâche de flux de données\Source OLE DB.Outputs[Sortie de source OLE DB]" />
+            <path
+              refId="Package\Tâche de flux de données.Paths[Sortie de tri]"
+              endId="Package\Tâche de flux de données\Destination Excel.Inputs[Entrée de destination Excel]"
+              name="Sortie de tri"
+              startId="Package\Tâche de flux de données\Trier.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -10375,6 +10886,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Contrainte 4"
       DTS:To="Package\DimPermission" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Contrainte 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{3F75B59B-6B80-4B96-B1C4-DB319040E378}"
+      DTS:From="Package\DimPermission"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Contrainte 5"
+      DTS:To="Package\DimFunctionality" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
@@ -10534,6 +11053,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="159,42"
+          Id="Package\DimFunctionality"
+          TopLeft="546,136" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Contrainte 5]"
+          TopLeft="426,154">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="120,0"
+              Start="0,0"
+              End="112.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="112.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Tâche de flux de données"
+          TopLeft="65,245" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10587,7 +11136,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\DimAmmountInstallations\Conversion de données"
           TopLeft="125,382" />
         <EdgeLayout
-          Id="Package\DimAmmountInstallations.Paths[Sortie de colonne dérivée]"
+          Id="Package\DimAmmountInstallations.Paths[Sortie de colonne dérivée1]"
           TopLeft="219.5,338">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10647,7 +11196,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimAmmountInstallations.Paths[Sortie de tri2]"
+          Id="Package\DimAmmountInstallations.Paths[Sortie de tri]"
           TopLeft="522,499">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10719,7 +11268,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimAmmountInstallations.Paths[Sortie de tri]"
+          Id="Package\DimAmmountInstallations.Paths[Sortie de tri2]"
           TopLeft="213,191">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10743,7 +11292,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimAmmountInstallations.Paths[Sortie de source OLE DB1]"
+          Id="Package\DimAmmountInstallations.Paths[Sortie de source OLE DB]"
           TopLeft="523.75,105">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10767,7 +11316,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimAmmountInstallations.Paths[Sortie de source OLE DB]"
+          Id="Package\DimAmmountInstallations.Paths[Sortie de source OLE DB1]"
           TopLeft="211.5,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10839,7 +11388,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimAmmountInstallations.Paths[Sortie de colonne dérivée1]"
+          Id="Package\DimAmmountInstallations.Paths[Sortie de colonne dérivée]"
           TopLeft="217,257">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11054,7 +11603,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimCategory.Paths[Sortie de tri1]"
+          Id="Package\DimCategory.Paths[Sortie de tri]"
           TopLeft="537,331">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11090,7 +11639,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimCategory.Paths[Sortie de tri]"
+          Id="Package\DimCategory.Paths[Sortie de tri1]"
           TopLeft="229.5,327">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11126,7 +11675,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimCategory.Paths[Sortie de source OLE DB1]"
+          Id="Package\DimCategory.Paths[Sortie de source OLE DB]"
           TopLeft="234.25,106">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11150,7 +11699,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimCategory.Paths[Sortie de source OLE DB]"
+          Id="Package\DimCategory.Paths[Sortie de source OLE DB1]"
           TopLeft="536,104">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11261,7 +11810,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\DimContentCategory\MAJ"
           TopLeft="123,102" />
         <EdgeLayout
-          Id="Package\DimContentCategory.Paths[Sortie de tri1]"
+          Id="Package\DimContentCategory.Paths[Sortie de tri]"
           TopLeft="175.5,349">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11295,7 +11844,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimContentCategory.Paths[Sortie de tri]"
+          Id="Package\DimContentCategory.Paths[Sortie de tri1]"
           TopLeft="405,353">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11329,7 +11878,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimContentCategory.Paths[Sortie de source OLE DB1]"
+          Id="Package\DimContentCategory.Paths[Sortie de source OLE DB]"
           TopLeft="442,71">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11363,7 +11912,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimContentCategory.Paths[Sortie de source OLE DB]"
+          Id="Package\DimContentCategory.Paths[Sortie de source OLE DB1]"
           TopLeft="174.25,74">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11429,7 +11978,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimContentCategory.Paths[Sortie de colonne dérivée1]"
+          Id="Package\DimContentCategory.Paths[Sortie de colonne dérivée]"
           TopLeft="170.75,144">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11451,7 +12000,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimContentCategory.Paths[Sortie de colonne dérivée]"
+          Id="Package\DimContentCategory.Paths[Sortie de colonne dérivée1]"
           TopLeft="172.25,212">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11612,7 +12161,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\DimDescription\Trier"
           TopLeft="119.333333333333,565.666666666667" />
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de colonne dérivée1]"
+          Id="Package\DimDescription.Paths[Sortie de colonne dérivée3]"
           TopLeft="179.083333333333,396.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11634,7 +12183,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de colonne dérivée]"
+          Id="Package\DimDescription.Paths[Sortie de colonne dérivée2]"
           TopLeft="178.333333333333,327.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11728,7 +12277,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de tri1]"
+          Id="Package\DimDescription.Paths[Sortie de tri]"
           TopLeft="170.833333333333,607.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11762,7 +12311,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de tri]"
+          Id="Package\DimDescription.Paths[Sortie de tri1]"
           TopLeft="458.333333333333,609.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11796,7 +12345,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de source OLE DB1]"
+          Id="Package\DimDescription.Paths[Sortie de source OLE DB]"
           TopLeft="454.416666666667,65">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11818,7 +12367,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de source OLE DB]"
+          Id="Package\DimDescription.Paths[Sortie de source OLE DB1]"
           TopLeft="166.5,66">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11862,7 +12411,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de conversion de données1]"
+          Id="Package\DimDescription.Paths[Sortie de conversion de données]"
           TopLeft="175.916666666667,218">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11884,7 +12433,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de conversion de données]"
+          Id="Package\DimDescription.Paths[Sortie de conversion de données1]"
           TopLeft="174.583333333333,542.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11906,7 +12455,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de colonne dérivée3]"
+          Id="Package\DimDescription.Paths[Sortie de colonne dérivée1]"
           TopLeft="178.333333333333,466.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11928,7 +12477,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimDescription.Paths[Sortie de colonne dérivée2]"
+          Id="Package\DimDescription.Paths[Sortie de colonne dérivée]"
           TopLeft="166,138">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12041,7 +12590,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\DimEditor\Destination OLE DB"
           TopLeft="182,632" />
         <EdgeLayout
-          Id="Package\DimEditor.Paths[Sortie de tri1]"
+          Id="Package\DimEditor.Paths[Sortie de tri]"
           TopLeft="223.5,321">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12077,7 +12626,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimEditor.Paths[Sortie de tri]"
+          Id="Package\DimEditor.Paths[Sortie de tri1]"
           TopLeft="625,323">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12113,7 +12662,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimEditor.Paths[Sortie de source OLE DB1]"
+          Id="Package\DimEditor.Paths[Sortie de source OLE DB]"
           TopLeft="198.5,144">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12149,7 +12698,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DimEditor.Paths[Sortie de source OLE DB]"
+          Id="Package\DimEditor.Paths[Sortie de source OLE DB1]"
           TopLeft="626.25,132">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12320,87 +12869,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\DimPermission\STG Permissions"
           TopLeft="106,43" />
         <NodeLayout
-          Size="266,42"
-          Id="Package\DimPermission\Remplace permissions tierces par blank"
-          TopLeft="52,247" />
+          Size="165,42"
+          Id="Package\DimPermission\Jointure de fusion"
+          TopLeft="293,395" />
         <NodeLayout
-          Size="114,42"
-          Id="Package\DimPermission\Unique"
-          TopLeft="130,110" />
-        <EdgeLayout
-          Id="Package\DimPermission.Paths[Sortie de source OLE DB]"
-          TopLeft="186.25,85">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,25"
-              Start="0,0"
-              End="0,17.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="112,42"
+          Id="Package\DimPermission\Trier 3"
+          TopLeft="132,316" />
         <NodeLayout
           Size="100,42"
           Id="Package\DimPermission\MAJ"
           TopLeft="132,177" />
-        <EdgeLayout
-          Id="Package\DimPermission.Paths[Sortie de tri]"
-          TopLeft="184.5,152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,25"
-              Start="0,0"
-              End="0,17.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DimPermission.Paths[Sortie de colonne dérivée]"
-          TopLeft="183.5,219">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28"
-              Start="0,0"
-              End="0,20.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="203,42"
-          Id="Package\DimPermission\Filtre les permissions core"
-          TopLeft="274,484" />
         <NodeLayout
           Size="177,42"
           Id="Package\DimPermission\DWH DimPermission"
@@ -12409,92 +12888,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Size="112,42"
           Id="Package\DimPermission\Trier 1"
           TopLeft="428,307" />
-        <EdgeLayout
-          Id="Package\DimPermission.Paths[Sortie de source OLE DB1]"
-          TopLeft="483.25,91">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,216"
-              Start="0,0"
-              End="0,208.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,208.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
-          Size="112,42"
-          Id="Package\DimPermission\Trier 3"
-          TopLeft="132,316" />
-        <EdgeLayout
-          Id="Package\DimPermission.Paths[Sortie 0]"
-          TopLeft="186.5,289">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,27"
-              Start="0,0"
-              End="0,19.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="266,42"
+          Id="Package\DimPermission\Remplace permissions tierces par blank"
+          TopLeft="52,247" />
         <NodeLayout
-          Size="165,42"
-          Id="Package\DimPermission\Jointure de fusion"
-          TopLeft="293,395" />
-        <EdgeLayout
-          Id="Package\DimPermission.Paths[Sortie de tri1]"
-          TopLeft="188,358">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="161.333333333333,37"
-              Start="0,0"
-              End="161.333333333333,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.9867947178872" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.9867947178872"
-                    Point2="0,21.9867947178872"
-                    Point3="4,21.9867947178872" />
-                  <mssgle:LineSegment
-                    End="157.333333333333,21.9867947178872" />
-                  <mssgle:CubicBezierSegment
-                    Point1="157.333333333333,21.9867947178872"
-                    Point2="161.333333333333,21.9867947178872"
-                    Point3="161.333333333333,25.9867947178872" />
-                  <mssgle:LineSegment
-                    End="161.333333333333,29.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="114,42"
+          Id="Package\DimPermission\Unique"
+          TopLeft="130,110" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\DimPermission\Filtre les permissions core"
+          TopLeft="274,484" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\DimPermission\Destination OLE DB"
+          TopLeft="157,593" />
         <EdgeLayout
           Id="Package\DimPermission.Paths[Sortie de tri2]"
           TopLeft="484,349">
@@ -12530,6 +12939,106 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\DimPermission.Paths[Sortie de tri1]"
+          TopLeft="184.5,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DimPermission.Paths[Sortie de tri]"
+          TopLeft="188,358">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="161.333333333333,37"
+              Start="0,0"
+              End="161.333333333333,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.9867947178872" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.9867947178872"
+                    Point2="0,21.9867947178872"
+                    Point3="4,21.9867947178872" />
+                  <mssgle:LineSegment
+                    End="157.333333333333,21.9867947178872" />
+                  <mssgle:CubicBezierSegment
+                    Point1="157.333333333333,21.9867947178872"
+                    Point2="161.333333333333,21.9867947178872"
+                    Point3="161.333333333333,25.9867947178872" />
+                  <mssgle:LineSegment
+                    End="161.333333333333,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DimPermission.Paths[Sortie de source OLE DB1]"
+          TopLeft="483.25,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,216"
+              Start="0,0"
+              End="0,208.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,208.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DimPermission.Paths[Sortie de source OLE DB]"
+          TopLeft="186.25,85">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\DimPermission.Paths[Sortie de jointure de fusion]"
           TopLeft="375.5,437">
           <EdgeLayout.Curve>
@@ -12551,10 +13060,50 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="173,42"
-          Id="Package\DimPermission\Destination OLE DB"
-          TopLeft="157,593" />
+        <EdgeLayout
+          Id="Package\DimPermission.Paths[Sortie de colonne dérivée]"
+          TopLeft="183.5,219">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DimPermission.Paths[Sortie 0]"
+          TopLeft="186.5,289">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27"
+              Start="0,0"
+              End="0,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DimPermission.Paths[Ajout]"
           TopLeft="375.5,526">
@@ -12622,6 +13171,120 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DimPermission\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Tâche de flux de données">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Tâche de flux de données\Destination Excel"
+          TopLeft="188,279" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Tâche de flux de données\Source OLE DB"
+          TopLeft="239,67" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Tâche de flux de données\Trier"
+          TopLeft="248,171" />
+        <EdgeLayout
+          Id="Package\Tâche de flux de données.Paths[Sortie de source OLE DB]"
+          TopLeft="315,109">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.5,62"
+              Start="0,0"
+              End="-15.5,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="-4,31" />
+                  <mssgle:LineSegment
+                    End="-11.5,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.5,31"
+                    Point2="-15.5,31"
+                    Point3="-15.5,35" />
+                  <mssgle:LineSegment
+                    End="-15.5,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tâche de flux de données.Paths[Sortie de tri]"
+          TopLeft="299.5,213">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-31,66"
+              Start="0,0"
+              End="-31,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29"
+                    Point2="0,33"
+                    Point3="-4,33" />
+                  <mssgle:LineSegment
+                    End="-27,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-27,33"
+                    Point2="-31,33"
+                    Point3="-31,37" />
+                  <mssgle:LineSegment
+                    End="-31,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tâche de flux de données\Destination Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tâche de flux de données\Source OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
