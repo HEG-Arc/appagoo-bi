@@ -1,0 +1,1282 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/19/2014 8:53:33 AM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="TBJDI"
+  DTS:CreatorName="TBJDI\Administrateur"
+  DTS:DTSID="{44CA3D80-AC05-4121-A5FC-CDD00C753E4D}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.3402.0"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{E43E24AC-F040-4E5C-A00A-72AB3D6E4FB4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5E0726A6-123D-4C10-9FA4-0B7E05C5D56C}"
+      DTS:ObjectName="Gestionnaire de connexions de fichiers plats">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\Administrateur\Desktop\f447143.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_unit_id"
+              DTS:DTSID="{49D01DA5-2296-4D20-A791-9B28CA65AB46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_created_at"
+              DTS:DTSID="{DECA2442-FB11-4792-905D-96B7FFEEE447}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_golden"
+              DTS:DTSID="{3179C0B2-17EA-42A9-BA58-0C518374EA45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_canary"
+              DTS:DTSID="{88365574-E5D8-45DE-AAE1-65B750B7AC0D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_id"
+              DTS:DTSID="{85E19CF0-4DDB-4C25-A83C-642539E6A1F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_missed"
+              DTS:DTSID="{04A63078-0ABA-4240-AAA9-469714D2DA98}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_started_at"
+              DTS:DTSID="{8910D0D6-903F-4F00-B0A9-F049C1D3CA00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_tainted"
+              DTS:DTSID="{AE76C9A6-7695-4A69-90E7-A535275C4591}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_channel"
+              DTS:DTSID="{0522D9FD-EBC2-403A-B2EC-1AD4506992A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_trust"
+              DTS:DTSID="{504F7135-CBCA-4366-BFE2-4D29D94FE972}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_worker_id"
+              DTS:DTSID="{916E59EE-F576-4722-8203-351DFD82370F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_country"
+              DTS:DTSID="{3EDEB503-1BFD-43DE-B029-7D23B92A71E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_region"
+              DTS:DTSID="{B3E50CDF-A0A6-4780-8947-3CD3B3A108DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_city"
+              DTS:DTSID="{AF66E38F-F28B-4D6F-B4A3-5C308612E5BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="_ip"
+              DTS:DTSID="{68B77F4C-D11F-4B58-A27C-00DEDD2CDE5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="choose_the_corresponding_functionalities"
+              DTS:DTSID="{1FD469D6-78A6-4B52-9D65-97FE71278796}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="choose_the_corresponding_functionalities_gold"
+              DTS:DTSID="{A6C889E7-6EB8-4F1A-8FCA-B308E915EEEA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="4000"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="description"
+              DTS:DTSID="{8A52A0E8-CEDA-44B2-9DFF-1788E20012B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{ED12C1EF-1592-43F5-B2FE-057454BAB201}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TBJDI.DWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{14138DFE-35F1-4036-96A4-C2828349BA6A}"
+      DTS:ObjectName="TBJDI.DWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=TBJDI;Initial Catalog=DWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import Crowd"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{9AF6978A-1E53-445D-A1FC-5C3DAAC7154E}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import Crowd"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;"
+              componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+              contactInfo="Colonne dérivée;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Crée de nouvelles valeurs de colonne en appliquant des expressions aux colonnes d'entrée de transformation. Créez de nouvelles colonnes ou remplacez celles qui existent déjà. Par exemple, concaténez les valeurs de la colonne 'prénom' et de la colonne 'nom' pour créer une colonne 'nom complet'."
+              name="Cherche &quot;USE_INTERNET&quot;"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Inputs[Entrée de colonne dérivée]"
+                  description="Entrée de la transformation de colonnes dérivées"
+                  name="Entrée de colonne dérivée">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Inputs[Entrée de colonne dérivée].Columns[choose_the_corresponding_functionalities]"
+                      cachedDataType="wstr"
+                      cachedLength="1000"
+                      cachedName="choose_the_corresponding_functionalities"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie de colonne dérivée]"
+                  description="Sortie par défaut de la transformation de colonnes dérivées"
+                  exclusionGroup="1"
+                  name="Sortie de colonne dérivée"
+                  synchronousInputId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Inputs[Entrée de colonne dérivée]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie de colonne dérivée].Columns[Colonne dérivée 1]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Calcul"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie de colonne dérivée].Columns[Colonne dérivée 1]"
+                      name="Colonne dérivée 1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expression de colonne dérivée"
+                          name="Expression">[FINDSTRING](#{Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities]},"ANDROID_TOOL",1)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Expression claire de colonne dérivée"
+                          expressionType="Notify"
+                          name="FriendlyExpression">FINDSTRING(choose_the_corresponding_functionalities,"ANDROID_TOOL",1)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de colonne dérivée]"
+                  description="Sortie d'erreur de la transformation de colonnes dérivées"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de colonne dérivée"
+                  synchronousInputId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Inputs[Entrée de colonne dérivée]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Crowd\Colonne dérivée 2"
+              componentClassID="{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+              contactInfo="Colonne dérivée;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Crée de nouvelles valeurs de colonne en appliquant des expressions aux colonnes d'entrée de transformation. Créez de nouvelles colonnes ou remplacez celles qui existent déjà. Par exemple, concaténez les valeurs de la colonne 'prénom' et de la colonne 'nom' pour créer une colonne 'nom complet'."
+              name="Colonne dérivée 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Crowd\Colonne dérivée 2.Inputs[Entrée de colonne dérivée]"
+                  description="Entrée de la transformation de colonnes dérivées"
+                  name="Entrée de colonne dérivée">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie de colonne dérivée]"
+                  description="Sortie par défaut de la transformation de colonnes dérivées"
+                  exclusionGroup="1"
+                  name="Sortie de colonne dérivée"
+                  synchronousInputId="Package\Import Crowd\Colonne dérivée 2.Inputs[Entrée de colonne dérivée]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie d'erreur de colonne dérivée]"
+                  description="Sortie d'erreur de la transformation de colonnes dérivées"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de colonne dérivée"
+                  synchronousInputId="Package\Import Crowd\Colonne dérivée 2.Inputs[Entrée de colonne dérivée]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie d'erreur de colonne dérivée].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Crowd\Conversion de données"
+              componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+              contactInfo="Conversion de données;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Conversion de données"
+              name="Conversion de données"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Crowd\Conversion de données.Inputs[Entrée de conversion de données]"
+                  name="Entrée de conversion de données">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Crowd\Conversion de données.Outputs[Sortie de conversion de données]"
+                  exclusionGroup="1"
+                  name="Sortie de conversion de données"
+                  synchronousInputId="Package\Import Crowd\Conversion de données.Inputs[Entrée de conversion de données]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Crowd\Conversion de données.Outputs[Sortie d'erreur de conversion de données]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de conversion de données"
+                  synchronousInputId="Package\Import Crowd\Conversion de données.Inputs[Entrée de conversion de données]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Crowd\Conversion de données.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Conversion de données.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Crowd\Conversion de données.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Conversion de données.Outputs[Sortie d'erreur de conversion de données].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;"
+              componentClassID="{7F88F654-4E20-4D14-84F4-AF9C925D3087}"
+              contactInfo="Fractionnement conditionnel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Achemine des lignes de données vers différentes sorties, selon le contexte des données. Utilisez des conditions (expressions SSIS) pour spécifier les lignes qui seront acheminées. Par exemple, séparez les enregistrements qui doivent être nettoyés de ceux qui sont prêts à être chargés ou acheminez uniquement un sous-ensemble d'enregistrements."
+              name="Filtre &quot;USE_INTERNET&quot;"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel]"
+                  description="Entrée vers la transformation de fractionnement conditionnel"
+                  name="Entrée de fractionnement conditionnel">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel].Columns[choose_the_corresponding_functionalities_gold]"
+                      cachedDataType="wstr"
+                      cachedLength="1000"
+                      cachedName="choose_the_corresponding_functionalities_gold"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities_gold]" />
+                    <inputColumn
+                      refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel].Columns[Colonne dérivée 1]"
+                      cachedDataType="i4"
+                      cachedName="Colonne dérivée 1"
+                      lineageId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie de colonne dérivée].Columns[Colonne dérivée 1]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[CONTAINS FCT]"
+                  description="Sortie 1 de la transformation de fractionnement conditionnel"
+                  errorOrTruncationOperation="Calcul"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="CONTAINS FCT"
+                  synchronousInputId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Spécifie l'expression. Cette version d'expression utilise les identificateurs de lignage à la place des noms de colonnes."
+                      name="Expression">#{Package\Import Crowd\Cherche "USE_INTERNET".Outputs[Sortie de colonne dérivée].Columns[Colonne dérivée 1]} &gt; 0 &amp;&amp; #{Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities_gold]} == ""</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Spécifie la version claire de l'expression. Cette version d'expression utilise les noms de colonnes."
+                      expressionType="Notify"
+                      name="FriendlyExpression">[Colonne dérivée 1] &gt; 0 &amp;&amp; choose_the_corresponding_functionalities_gold == ""</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Spécifie la position de la condition dans la liste des conditions que la transformation évalue. L'ordre d'évaluation se fait par ordre croissant de valeur."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[Sortie par défaut de fractionnement conditionnel]"
+                  description="Sortie par défaut de la transformation de fractionnement conditionnel"
+                  exclusionGroup="1"
+                  name="Sortie par défaut de fractionnement conditionnel"
+                  synchronousInputId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de fractionnement conditionnel]"
+                  description="Sortie d'erreur de la transformation de fractionnement conditionnel"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de fractionnement conditionnel"
+                  synchronousInputId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[Sortie d'erreur de fractionnement conditionnel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Crowd\Source du fichier plat"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="1036"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Crowd\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions de fichiers plats]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_unit_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_unit_id]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_unit_id]"
+                      name="_unit_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_created_at]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_created_at]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_created_at]"
+                      name="_created_at"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_golden]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_golden]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_golden]"
+                      name="_golden"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_canary]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_canary]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_canary]"
+                      name="_canary"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_id]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_id]"
+                      name="_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_missed]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_missed]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_missed]"
+                      name="_missed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_started_at]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_started_at]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_started_at]"
+                      name="_started_at"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_tainted]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_tainted]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_tainted]"
+                      name="_tainted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_channel]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_channel]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_channel]"
+                      name="_channel"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_trust]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_trust]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_trust]"
+                      name="_trust"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_worker_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_worker_id]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_worker_id]"
+                      name="_worker_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_country]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_country]"
+                      name="_country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_region]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_region]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_region]"
+                      name="_region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_city]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_city]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_city]"
+                      name="_city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_ip]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_ip]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[_ip]"
+                      name="_ip"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[choose_the_corresponding_functionalities]"
+                      length="1000"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities]"
+                      name="choose_the_corresponding_functionalities"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities_gold]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[choose_the_corresponding_functionalities_gold]"
+                      length="1000"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[choose_the_corresponding_functionalities_gold]"
+                      name="choose_the_corresponding_functionalities_gold"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[name]"
+                      length="255"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[description]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[description]"
+                      length="4000"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[description]"
+                      name="description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_unit_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="_unit_id" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_created_at]"
+                      dataType="wstr"
+                      length="255"
+                      name="_created_at" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_golden]"
+                      dataType="wstr"
+                      length="255"
+                      name="_golden" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_canary]"
+                      dataType="wstr"
+                      length="255"
+                      name="_canary" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="_id" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_missed]"
+                      dataType="wstr"
+                      length="255"
+                      name="_missed" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_started_at]"
+                      dataType="wstr"
+                      length="255"
+                      name="_started_at" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_tainted]"
+                      dataType="wstr"
+                      length="255"
+                      name="_tainted" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_channel]"
+                      dataType="wstr"
+                      length="255"
+                      name="_channel" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_trust]"
+                      dataType="wstr"
+                      length="255"
+                      name="_trust" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_worker_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="_worker_id" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_country]"
+                      dataType="wstr"
+                      length="255"
+                      name="_country" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_region]"
+                      dataType="wstr"
+                      length="255"
+                      name="_region" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_city]"
+                      dataType="wstr"
+                      length="255"
+                      name="_city" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[_ip]"
+                      dataType="wstr"
+                      length="255"
+                      name="_ip" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[choose_the_corresponding_functionalities]"
+                      dataType="wstr"
+                      length="1000"
+                      name="choose_the_corresponding_functionalities" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[choose_the_corresponding_functionalities_gold]"
+                      dataType="wstr"
+                      length="1000"
+                      name="choose_the_corresponding_functionalities_gold" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="255"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[description]"
+                      dataType="wstr"
+                      length="4000"
+                      name="description" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import Crowd.Paths[CONTAINS FCT]"
+              endId="Package\Import Crowd\Colonne dérivée 2.Inputs[Entrée de colonne dérivée]"
+              name="CONTAINS FCT"
+              startId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[CONTAINS FCT]" />
+            <path
+              refId="Package\Import Crowd.Paths[Sortie de colonne dérivée1]"
+              endId="Package\Import Crowd\Conversion de données.Inputs[Entrée de conversion de données]"
+              name="Sortie de colonne dérivée"
+              startId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie de colonne dérivée]" />
+            <path
+              refId="Package\Import Crowd.Paths[Sortie de colonne dérivée]"
+              endId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel]"
+              name="Sortie de colonne dérivée"
+              startId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie de colonne dérivée]" />
+            <path
+              refId="Package\Import Crowd.Paths[Sortie de source de fichier plat]"
+              endId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de source de fichier plat"
+              startId="Package\Import Crowd\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="sql11">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Import Crowd"
+          TopLeft="158,85" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import Crowd">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Import Crowd\Source du fichier plat"
+          TopLeft="98,38" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;"
+          TopLeft="194,128" />
+        <EdgeLayout
+          Id="Package\Import Crowd.Paths[Sortie de source de fichier plat]"
+          TopLeft="188.5,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="108,48"
+              Start="0,0"
+              End="108,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20"
+                    Point2="0,24"
+                    Point3="4,24" />
+                  <mssgle:LineSegment
+                    End="104,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="104,24"
+                    Point2="108,24"
+                    Point3="108,28" />
+                  <mssgle:LineSegment
+                    End="108,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="46,29,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;"
+          TopLeft="238,222" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Import Crowd\Colonne dérivée 2"
+          TopLeft="239,335" />
+        <EdgeLayout
+          Id="Package\Import Crowd.Paths[CONTAINS FCT]"
+          TopLeft="333,264">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11,71"
+              Start="0,0"
+              End="-11,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="-4,35.5" />
+                  <mssgle:LineSegment
+                    End="-7,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7,35.5"
+                    Point2="-11,35.5"
+                    Point3="-11,39.5" />
+                  <mssgle:LineSegment
+                    End="-11,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.88236328125,40.5,86.7647265625,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Crowd.Paths[Sortie de colonne dérivée]"
+          TopLeft="296.5,170">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36.5,52"
+              Start="0,0"
+              End="36.5,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="4,26" />
+                  <mssgle:LineSegment
+                    End="32.5,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.5,26"
+                    Point2="36.5,26"
+                    Point3="36.5,30" />
+                  <mssgle:LineSegment
+                    End="36.5,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Import Crowd\Conversion de données"
+          TopLeft="444,423" />
+        <EdgeLayout
+          Id="Package\Import Crowd.Paths[Sortie de colonne dérivée1]"
+          TopLeft="322,377">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="217.5,46"
+              Start="0,0"
+              End="217.5,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19"
+                    Point2="0,23"
+                    Point3="4,23" />
+                  <mssgle:LineSegment
+                    End="213.5,23" />
+                  <mssgle:CubicBezierSegment
+                    Point1="213.5,23"
+                    Point2="217.5,23"
+                    Point3="217.5,27" />
+                  <mssgle:LineSegment
+                    End="217.5,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
