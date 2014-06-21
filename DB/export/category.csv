@@ -1,0 +1,45 @@
+﻿number;label;description;family
+0;UNKNOWN;UNKNOWN;UNKNOWN
+1;ACTION;NULL;Jeux
+2;ADVENTURE;NULL;Jeux
+3;ARCADE;NULL;Jeux
+4;BOARD;NULL;Jeux
+5;BOOKS & REFERENCE;Book readers, reference books, text books, dictionaries, thesaurus, wikis;Application
+6;BUSINESS;Document editor/reader, package tracking, remote desktop, email management, job search;Application
+7;CARD;NULL;Jeux
+8;CASINO;NULL;Jeux
+9;CASUAL;NULL;Jeux
+10;COMICS;Comic players, comic titles;Application
+11;COMMUNICATION;Messaging, chat/IM, dialers, address books, browsers, call management;Application
+12;EDUCATION;Exam preparations, study-aids, vocabulary, educational games, language learning;Application
+13;EDUCATIONAL;NULL;Jeux
+14;ENTERTAINMENT;Streaming video, Movies, TV, interactive entertainment;Application
+15;FAMILY;NULL;Jeux
+16;FINANCE;Banking, payment, ATM finders, financial news, insurance, taxes, portfolio/trading, tip calculators;Application
+17;HEALTH & FITNESS;Personal fitness, workout tracking, diet and nutritional tips, health & safety etc.;Application
+18;LIBRARIES & DEMO;Software Libraries, technical demos;Application
+19;LIFESTYLE;Recipes, style guides;Application
+20;MEDIA & VIDEO;Subscription movie services, remote controls, media/video players;Application
+21;MEDICAL;Drug & clinical references, calculators, handbooks for health-care providers, medical journals & news;Application
+22;MUSIC;NULL;Jeux
+23;MUSIC & AUDIO;Music services, radios, music players;Application
+24;NEWS & MAGAZINES;Newspapers, news aggregators, magazines, blogging;Application
+25;PERSONALIZATION;Wallpapers, live wallpapers, home screen, lock screen, ringtones;Application
+26;PHOTOGRAPHY;Cameras, photo editing tools, photo management and sharing;Application
+27;PRODUCTIVITY;Notepad, to do list, keyboard, printing, calendar, backup, calculator, conversion;Application
+28;PUZZLE;NULL;Jeux
+29;RACING;NULL;Jeux
+30;ROLE PLAYING;NULL;Jeux
+31;SHOPPING;Online shopping, auctions, coupons, price comparison, grocery lists, product reviews;Application
+32;SIMULATION;NULL;Jeux
+33;SOCIAL;Social networking, check-in, blogging;Application
+34;SPORTS;Sports News & Commentary, score tracking, fantasy team management, game Coverage;Application
+35;STRATEGY;NULL;Jeux
+36;TOOLS;Tools for Android devices;Application
+37;TRANSPORTATION;Public transportation, navigation tools, driving;Application
+38;TRAVEL & LOCAL;Maps, City guides, local business information, trip management tools;Application
+39;TRIVIA;NULL;Jeux
+40;WEATHER;Weather reports;Application
+41;WORD;NULL;Jeux
+42;LIVE WALLPAPERS;NULL;Application
+43;WIDGETS;NULL;Application

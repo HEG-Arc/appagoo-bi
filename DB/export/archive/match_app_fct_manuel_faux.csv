@@ -1,0 +1,102 @@
+﻿number;packageName;name;functionality
+1;com.gameloft.android.ANMP.GloftDMHM;Despicable Me;GAME
+4;com.king.farmheroessaga;Farm Heroes Saga;GAME
+5;flipboard.app;Flipboard: Your News Magazine;NEWS_AGREGATOR
+6;flipboard.app;Flipboard: Your News Magazine;SHARING
+7;flipboard.app;Flipboard: Your News Magazine;NEWS
+8;flipboard.app;Flipboard: Your News Magazine;SOCIAL_NETWORK_CONNECTION
+9;flipboard.app;Flipboard: Your News Magazine;WIDGET
+10;com.cleanmaster.mguard;Clean Master - Free Optimizer;ANDROID_TOOL
+11;com.cleanmaster.mguard;Clean Master - Free Optimizer;STORAGE_MANAGER
+12;com.whatsapp.wallpaper;WhatsApp Wallpaper;WALLPAPER
+13;com.amazon.kindle;Amazon Kindle;READER
+14;com.amazon.kindle;Amazon Kindle;ONLINE_SHOPPING
+15;com.amazon.kindle;Amazon Kindle;BOOK_REFERENCE
+16;com.roidapp.photogrid;Photo Grid - Collage Maker;CAMERA
+17;com.roidapp.photogrid;Photo Grid - Collage Maker;PHOTO_EDITING
+18;com.roidapp.photogrid;Photo Grid - Collage Maker;SOCIAL_NETWORK_CONNECTION
+19;com.roidapp.photogrid;Photo Grid - Collage Maker;SHARING
+21;tv.peel.samsung.app;Samsung WatchON™ (On TV);REMOTE_CONTROLS
+22;tv.peel.samsung.app;Samsung WatchON™ (On TV);SOCIAL_NETWORK_CONNECTION
+23;tv.peel.samsung.app;Samsung WatchON™ (On TV);SHARING
+24;tv.peel.samsung.app;Samsung WatchON™ (On TV);TV_GUIDE
+25;tv.peel.samsung.app;Samsung WatchON™ (On TV);VIDEO_STREAMING
+26;com.google.android.street;Street View on Google Maps;GPS_NAVIGATION
+27;com.google.android.street;Street View on Google Maps;POINT_OF_INTEREST
+28;com.metago.astro;ASTRO File Manager with Cloud;DOCUMENT_EDITOR
+30;com.metago.astro;ASTRO File Manager with Cloud;STORAGE_MANAGER
+31;com.metago.astro;ASTRO File Manager with Cloud;SOCIAL_NETWORK_CONNECTION
+32;com.king.candycrushsaga;Candy Crush Saga;GAME
+33;com.king.candycrushsaga;Candy Crush Saga;SOCIAL_NETWORK_CONNECTION
+34;com.google.android.apps.books;Google Play Books;BOOK_REFERENCE
+35;com.google.android.apps.books;Google Play Books;ONLINE_SHOPPING
+37;com.google.android.apps.books;Google Play Books;READER
+38;com.google.android.talk;Hangouts;CAMERA
+39;com.google.android.talk;Hangouts;CONTACT_BOOK
+40;com.google.android.talk;Hangouts;GPS_NAVIGATION
+41;com.google.android.talk;Hangouts;SMS
+42;com.google.android.talk;Hangouts;STORAGE_MANAGER
+43;com.google.android.talk;Hangouts;VOIP
+44;kik.android;Kik Messenger;CONTACT_BOOK
+45;kik.android;Kik Messenger;MESSAGING
+46;com.google.android.talk;Hangouts;MESSAGING
+47;kik.android;Kik Messenger;INTERNET_BROWSER
+48;kik.android;Kik Messenger;SMS
+49;com.jb.gosms;GO SMS Pro(Messages & Contact);CAMERA
+50;com.jb.gosms;GO SMS Pro(Messages & Contact);CONTACT_BOOK
+51;com.jb.gosms;GO SMS Pro(Messages & Contact);MESSAGING
+52;com.jb.gosms;GO SMS Pro(Messages & Contact);SMS
+53;com.twitter.android;Twitter;CONTACT_BOOK
+54;com.twitter.android;Twitter;GPS_NAVIGATION
+55;com.twitter.android;Twitter;SOCIAL_NETWORK
+56;com.yahoo.mobile.client.android.im;Yahoo Messenger;CAMERA
+57;com.yahoo.mobile.client.android.im;Yahoo Messenger;CONTACT_BOOK
+58;com.yahoo.mobile.client.android.im;Yahoo Messenger;MESSAGING
+60;com.yahoo.mobile.client.android.im;Yahoo Messenger;SMS
+61;com.yahoo.mobile.client.android.im;Yahoo Messenger;VOIP
+62;com.dataviz.docstogo;Docs To Go - Free Office Suite;DOCUMENT_EDITOR
+63;com.dataviz.docstogo;Docs To Go - Free Office Suite;STORAGE_MANAGER
+64;com.dataviz.docstogo;Docs To Go - Free Office Suite;SOCIAL_NETWORK_CONNECTION
+65;com.dataviz.docstogo;Docs To Go - Free Office Suite;READER
+66;com.mxtech.videoplayer.ad;MX Player;MULTIMEDIA_PLAYER
+67;com.mxtech.videoplayer.ad;MX Player;STORAGE_MANAGER
+68;com.mxtech.videoplayer.ad;MX Player;VIDEO_STREAMING
+69;com.fingersoft.hillclimb;Hill Climb Racing;GAME
+70;com.devuni.flashlight;Tiny Flashlight + LED;FLASHLIGHT
+71;com.devuni.flashlight;Tiny Flashlight + LED;WIDGET
+72;com.forthblue.pool;Pool Billiards Pro;GAME
+73;com.google.earth;Google Earth;GPS_NAVIGATION
+74;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;CAMERA
+75;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;POINT_OF_INTEREST
+76;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;PRICE_COMPARAISON
+77;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;PRODUCT_REVIEW
+78;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;RESERVATION
+79;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;SHOPPING_GUIDE
+80;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;STORAGE_MANAGER
+81;com.tripadvisor.tripadvisor;TripAdvisor Hotels Flights;TRAVEL_MANAGER
+82;com.google.android.apps.maps;Maps;GPS_NAVIGATION
+83;com.google.android.apps.maps;Maps;POINT_OF_INTEREST
+84;com.google.android.apps.plus;Google+;CONTACT_BOOK
+85;com.google.android.apps.plus;Google+;GPS_NAVIGATION
+86;com.google.android.apps.plus;Google+;SOCIAL_NETWORK
+88;com.google.android.apps.plus;Google+;STORAGE_MANAGER
+89;com.threed.bowling;3D Bowling;GAME
+90;vStudio.Android.Camera360;Camera360 Ultimate;CAMERA
+91;vStudio.Android.Camera360;Camera360 Ultimate;STORAGE_MANAGER
+93;vStudio.Android.Camera360;Camera360 Ultimate;SOCIAL_NETWORK_CONNECTION
+94;com.rovio.angrybirdsrio;Angry Birds Rio;GAME
+95;com.game.JewelsStar;Jewels Star;GAME
+96;com.outfit7.talkingtom2free;Talking Tom Cat 2 Free;SOCIAL_NETWORK_CONNECTION
+97;com.outfit7.talkingtom2free;Talking Tom Cat 2 Free;INTERACTIVE_ENTERTAINMENT
+98;com.creativemobile.DragRacing;Drag Racing;GAME
+99;com.shazam.android;Shazam;SHARING
+100;com.shazam.android;Shazam;SOCIAL_NETWORK_CONNECTION
+101;org.mozilla.firefox;Firefox Browser for Android;INTERNET_BROWSER
+102;org.mozilla.firefox;Firefox Browser for Android;STORAGE_MANAGER
+103;com.viber.voip;Viber;PHONE
+104;com.viber.voip;Viber;SMS
+106;com.viber.voip;Viber;MESSAGING
+107;com.viber.voip;Viber;VOIP
+108;com.viber.voip;Viber;STORAGE_MANAGER
+109;com.viber.voip;Viber;CONTACT_BOOK
+110;me.pou.app;Pou;INTERACTIVE_ENTERTAINMENT
