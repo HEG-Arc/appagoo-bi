@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="672" y="-14">
+<window height="768" maximized="true" minimized="true" width="1024" x="672" y="-14">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar/>
 <coolbarLayout>
@@ -24,9 +24,6 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="0: KNIME_PLAYGET" title="0: KNIME_PLAYGET" tooltip="0: KNIME_PLAYGET" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
-</editor>
-<editor id="org.knime.workbench.editor.WorkflowEditor" name="workflow.knime" partName="2: Exemple_RechercheStringKeywords" title="2: Exemple_RechercheStringKeywords" tooltip="2: Exemple_RechercheStringKeywords" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 </editor>
 </editors>
 <views>
@@ -156,7 +153,11 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/KNIME_PLAYGET/workflow.knime"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.knime.workbench.editor.WorkflowEditor" uri="knime://LOCAL/Exemple_RechercheStringKeywords/workflow.knime"/>
 </editors>
+<item historyLabel="0: KNIME_PLAYGET" index="0"/>
+<item historyLabel="2: Exemple_RechercheStringKeywords" index="1"/>
+<item historyLabel="0: KNIME_PLAYGET" index="0"/>
 <item active="true" historyLabel="0: KNIME_PLAYGET" index="0"/>
 </navigationHistory>
 </page>
