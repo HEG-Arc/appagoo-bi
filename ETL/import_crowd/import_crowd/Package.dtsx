@@ -11,8 +11,8 @@
   DTS:LocaleID="1036"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="63"
-  DTS:VersionGUID="{D163D2AC-47B2-4679-82BE-54E72E75ECE2}">
+  DTS:VersionBuild="64"
+  DTS:VersionGUID="{4AF8966A-5018-4F50-9436-9F6C4CB53EEF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1808,24 +1808,24 @@ ORDER BY workerId</property>
               startId="Package\Check &quot;all matchs&quot;\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
               refId="Package\Check &quot;all matchs&quot;.Paths[Sortie de source OLE DB1]"
-              endId="Package\Check &quot;all matchs&quot;\Trier 1.Inputs[Entrée de tri]"
-              name="Sortie de source OLE DB"
-              startId="Package\Check &quot;all matchs&quot;\Source OLE DB.Outputs[Sortie de source OLE DB]" />
-            <path
-              refId="Package\Check &quot;all matchs&quot;.Paths[Sortie de source OLE DB]"
               endId="Package\Check &quot;all matchs&quot;\Trier.Inputs[Entrée de tri]"
               name="Sortie de source OLE DB"
               startId="Package\Check &quot;all matchs&quot;\STG - Groupe.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri1]"
-              endId="Package\Check &quot;all matchs&quot;\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
-              name="Sortie de tri"
-              startId="Package\Check &quot;all matchs&quot;\Trier 1.Outputs[Sortie de tri]" />
+              refId="Package\Check &quot;all matchs&quot;.Paths[Sortie de source OLE DB]"
+              endId="Package\Check &quot;all matchs&quot;\Trier 1.Inputs[Entrée de tri]"
+              name="Sortie de source OLE DB"
+              startId="Package\Check &quot;all matchs&quot;\Source OLE DB.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri]"
+              refId="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri1]"
               endId="Package\Check &quot;all matchs&quot;\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
               name="Sortie de tri"
               startId="Package\Check &quot;all matchs&quot;\Trier.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri]"
+              endId="Package\Check &quot;all matchs&quot;\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
+              name="Sortie de tri"
+              startId="Package\Check &quot;all matchs&quot;\Trier 1.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -4443,24 +4443,24 @@ WHERE     (functionality = 'NONE')</property>
               startId="Package\Check NONE\Jointure de fusion.Outputs[Sortie de jointure de fusion]" />
             <path
               refId="Package\Check NONE.Paths[Sortie de source OLE DB1]"
-              endId="Package\Check NONE\Trier 1.Inputs[Entrée de tri]"
-              name="Sortie de source OLE DB"
-              startId="Package\Check NONE\STG - ALL.Outputs[Sortie de source OLE DB]" />
-            <path
-              refId="Package\Check NONE.Paths[Sortie de source OLE DB]"
               endId="Package\Check NONE\Trier.Inputs[Entrée de tri]"
               name="Sortie de source OLE DB"
               startId="Package\Check NONE\Source OLE DB.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\Check NONE.Paths[Sortie de tri1]"
-              endId="Package\Check NONE\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
-              name="Sortie de tri"
-              startId="Package\Check NONE\Trier 1.Outputs[Sortie de tri]" />
+              refId="Package\Check NONE.Paths[Sortie de source OLE DB]"
+              endId="Package\Check NONE\Trier 1.Inputs[Entrée de tri]"
+              name="Sortie de source OLE DB"
+              startId="Package\Check NONE\STG - ALL.Outputs[Sortie de source OLE DB]" />
             <path
-              refId="Package\Check NONE.Paths[Sortie de tri]"
+              refId="Package\Check NONE.Paths[Sortie de tri1]"
               endId="Package\Check NONE\Jointure de fusion.Inputs[Entrée gauche de jointure de fusion]"
               name="Sortie de tri"
               startId="Package\Check NONE\Trier.Outputs[Sortie de tri]" />
+            <path
+              refId="Package\Check NONE.Paths[Sortie de tri]"
+              endId="Package\Check NONE\Jointure de fusion.Inputs[Entrée droite de jointure de fusion]"
+              name="Sortie de tri"
+              startId="Package\Check NONE\Trier 1.Outputs[Sortie de tri]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -5779,34 +5779,34 @@ ORDER BY unitId</property>
               startId="Package\CrowdSourcing ETL\Fractionnement conditionnel.Outputs[Ajouter]" />
             <path
               refId="Package\CrowdSourcing ETL.Paths[Sortie de colonne dérivée1]"
-              endId="Package\CrowdSourcing ETL\Unir tout 1.Inputs[Entrée Union All 1]"
-              name="Sortie de colonne dérivée"
-              startId="Package\CrowdSourcing ETL\Set Pk DimFunctionality unknown.Outputs[Sortie de colonne dérivée]" />
-            <path
-              refId="Package\CrowdSourcing ETL.Paths[Sortie de colonne dérivée]"
               endId="Package\CrowdSourcing ETL\Unir tout.Inputs[Entrée Union All 1]"
               name="Sortie de colonne dérivée"
               startId="Package\CrowdSourcing ETL\Set PK DimDescription unknown.Outputs[Sortie de colonne dérivée]" />
             <path
-              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance1]"
-              endId="Package\CrowdSourcing ETL\Unir tout 1.Inputs[Unir tout entrée 1]"
-              name="Sortie de recherche avec correspondance"
-              startId="Package\CrowdSourcing ETL\Cherche PK DimFunctionality.Outputs[Sortie de recherche avec correspondance]" />
+              refId="Package\CrowdSourcing ETL.Paths[Sortie de colonne dérivée]"
+              endId="Package\CrowdSourcing ETL\Unir tout 1.Inputs[Entrée Union All 1]"
+              name="Sortie de colonne dérivée"
+              startId="Package\CrowdSourcing ETL\Set Pk DimFunctionality unknown.Outputs[Sortie de colonne dérivée]" />
             <path
-              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance]"
+              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance1]"
               endId="Package\CrowdSourcing ETL\Unir tout.Inputs[Unir tout entrée 1]"
               name="Sortie de recherche avec correspondance"
               startId="Package\CrowdSourcing ETL\Cherche PK DimDescription.Outputs[Sortie de recherche avec correspondance]" />
             <path
-              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche sans correspondance1]"
-              endId="Package\CrowdSourcing ETL\Set Pk DimFunctionality unknown.Inputs[Entrée de colonne dérivée]"
-              name="Sortie de recherche sans correspondance"
-              startId="Package\CrowdSourcing ETL\Cherche PK DimFunctionality.Outputs[Sortie de recherche sans correspondance]" />
+              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance]"
+              endId="Package\CrowdSourcing ETL\Unir tout 1.Inputs[Unir tout entrée 1]"
+              name="Sortie de recherche avec correspondance"
+              startId="Package\CrowdSourcing ETL\Cherche PK DimFunctionality.Outputs[Sortie de recherche avec correspondance]" />
             <path
-              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche sans correspondance]"
+              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche sans correspondance1]"
               endId="Package\CrowdSourcing ETL\Set PK DimDescription unknown.Inputs[Entrée de colonne dérivée]"
               name="Sortie de recherche sans correspondance"
               startId="Package\CrowdSourcing ETL\Cherche PK DimDescription.Outputs[Sortie de recherche sans correspondance]" />
+            <path
+              refId="Package\CrowdSourcing ETL.Paths[Sortie de recherche sans correspondance]"
+              endId="Package\CrowdSourcing ETL\Set Pk DimFunctionality unknown.Inputs[Entrée de colonne dérivée]"
+              name="Sortie de recherche sans correspondance"
+              startId="Package\CrowdSourcing ETL\Cherche PK DimFunctionality.Outputs[Sortie de recherche sans correspondance]" />
             <path
               refId="Package\CrowdSourcing ETL.Paths[Sortie de source OLE DB]"
               endId="Package\CrowdSourcing ETL\Fractionnement conditionnel.Inputs[Entrée de fractionnement conditionnel]"
@@ -5814,14 +5814,14 @@ ORDER BY unitId</property>
               startId="Package\CrowdSourcing ETL\STG - Groupe.Outputs[Sortie de source OLE DB]" />
             <path
               refId="Package\CrowdSourcing ETL.Paths[Unir tout sortie 11]"
-              endId="Package\CrowdSourcing ETL\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
-              name="Unir tout sortie 1"
-              startId="Package\CrowdSourcing ETL\Unir tout 1.Outputs[Unir tout sortie 1]" />
-            <path
-              refId="Package\CrowdSourcing ETL.Paths[Unir tout sortie 1]"
               endId="Package\CrowdSourcing ETL\Cherche PK DimFunctionality.Inputs[Entrée de recherche]"
               name="Unir tout sortie 1"
               startId="Package\CrowdSourcing ETL\Unir tout.Outputs[Unir tout sortie 1]" />
+            <path
+              refId="Package\CrowdSourcing ETL.Paths[Unir tout sortie 1]"
+              endId="Package\CrowdSourcing ETL\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+              name="Unir tout sortie 1"
+              startId="Package\CrowdSourcing ETL\Unir tout 1.Outputs[Unir tout sortie 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -6680,14 +6680,14 @@ ORDER BY unitId</property>
               startId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Outputs[CONTAINS FCT]" />
             <path
               refId="Package\Import Crowd.Paths[Sortie de colonne dérivée1]"
-              endId="Package\Import Crowd\Conversion de données.Inputs[Entrée de conversion de données]"
-              name="Sortie de colonne dérivée"
-              startId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie de colonne dérivée]" />
-            <path
-              refId="Package\Import Crowd.Paths[Sortie de colonne dérivée]"
               endId="Package\Import Crowd\Filtre &quot;USE_INTERNET&quot;.Inputs[Entrée de fractionnement conditionnel]"
               name="Sortie de colonne dérivée"
               startId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Outputs[Sortie de colonne dérivée]" />
+            <path
+              refId="Package\Import Crowd.Paths[Sortie de colonne dérivée]"
+              endId="Package\Import Crowd\Conversion de données.Inputs[Entrée de conversion de données]"
+              name="Sortie de colonne dérivée"
+              startId="Package\Import Crowd\Colonne dérivée 2.Outputs[Sortie de colonne dérivée]" />
             <path
               refId="Package\Import Crowd.Paths[Sortie de source de fichier plat]"
               endId="Package\Import Crowd\Cherche &quot;USE_INTERNET&quot;.Inputs[Entrée de colonne dérivée]"
@@ -6759,7 +6759,7 @@ ORDER BY unitId</property>
           Id="Package\Check &quot;all matchs&quot;\Commande OLE DB"
           TopLeft="331,410" />
         <EdgeLayout
-          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri1]"
+          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri]"
           TopLeft="549,226">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6793,7 +6793,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri]"
+          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de tri1]"
           TopLeft="226.5,223">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6827,7 +6827,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de source OLE DB1]"
+          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de source OLE DB]"
           TopLeft="549,116">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6849,7 +6849,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de source OLE DB]"
+          Id="Package\Check &quot;all matchs&quot;.Paths[Sortie de source OLE DB1]"
           TopLeft="229,112">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6908,14 +6908,6 @@ ORDER BY unitId</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Check &quot;all matchs&quot;\STG - Groupe">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Check &quot;all matchs&quot;\Source OLE DB">
     <Properties>
       <Property>
@@ -6925,6 +6917,14 @@ ORDER BY unitId</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Check &quot;all matchs&quot;\STG - Groupe">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -6958,7 +6958,7 @@ ORDER BY unitId</property>
           Id="Package\Check NONE\Colonne dérivée"
           TopLeft="337,397" />
         <EdgeLayout
-          Id="Package\Check NONE.Paths[Sortie de tri1]"
+          Id="Package\Check NONE.Paths[Sortie de tri]"
           TopLeft="570,161">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6992,7 +6992,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Check NONE.Paths[Sortie de tri]"
+          Id="Package\Check NONE.Paths[Sortie de tri1]"
           TopLeft="173.5,159">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7026,7 +7026,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Check NONE.Paths[Sortie de source OLE DB1]"
+          Id="Package\Check NONE.Paths[Sortie de source OLE DB]"
           TopLeft="548,80">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7060,7 +7060,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Check NONE.Paths[Sortie de source OLE DB]"
+          Id="Package\Check NONE.Paths[Sortie de source OLE DB1]"
           TopLeft="156,82">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7216,30 +7216,6 @@ ORDER BY unitId</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CrowdSourcing ETL.Paths[Sortie de recherche sans correspondance1]"
-          TopLeft="389,596">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="65,0"
-              Start="0,0"
-              End="57.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="57.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-62.75201171875,5,183.0040234375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CrowdSourcing ETL.Paths[Sortie de recherche sans correspondance]"
           TopLeft="390,380.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7263,31 +7239,31 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance1]"
-          TopLeft="281,616">
+          Id="Package\CrowdSourcing ETL.Paths[Sortie de recherche sans correspondance]"
+          TopLeft="389,596">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53"
+              EndConnector="65,0"
               Start="0,0"
-              End="0,45.5">
+              End="57.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5" />
+                    End="57.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-91.67701171875,16.9453125,183.3540234375,11.609375"
+              BoundingBox="-62.75201171875,5,183.0040234375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance]"
+          Id="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance1]"
           TopLeft="282.25,404">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7311,41 +7287,31 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\CrowdSourcing ETL.Paths[Sortie de colonne dérivée1]"
-          TopLeft="573,618">
+          Id="Package\CrowdSourcing ETL.Paths[Sortie de recherche avec correspondance]"
+          TopLeft="281,616">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-271.333333333333,51"
+              EndConnector="0,53"
               Start="0,0"
-              End="-271.333333333333,43.5">
+              End="0,45.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.2335329341317" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.2335329341317"
-                    Point2="0,30.2335329341317"
-                    Point3="-4,30.2335329341317" />
-                  <mssgle:LineSegment
-                    End="-267.333333333333,30.2335329341317" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-267.333333333333,30.2335329341317"
-                    Point2="-271.333333333333,30.2335329341317"
-                    Point3="-271.333333333333,34.2335329341317" />
-                  <mssgle:LineSegment
-                    End="-271.333333333333,43.5" />
+                    End="0,45.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-91.67701171875,16.9453125,183.3540234375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\CrowdSourcing ETL.Paths[Sortie de colonne dérivée]"
+          Id="Package\CrowdSourcing ETL.Paths[Sortie de colonne dérivée1]"
           TopLeft="614,399">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7370,6 +7336,40 @@ ORDER BY unitId</property>
                     Point3="-316,37.1650485436893" />
                   <mssgle:LineSegment
                     End="-316,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CrowdSourcing ETL.Paths[Sortie de colonne dérivée]"
+          TopLeft="573,618">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-271.333333333333,51"
+              Start="0,0"
+              End="-271.333333333333,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.2335329341317" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.2335329341317"
+                    Point2="0,30.2335329341317"
+                    Point3="-4,30.2335329341317" />
+                  <mssgle:LineSegment
+                    End="-267.333333333333,30.2335329341317" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-267.333333333333,30.2335329341317"
+                    Point2="-271.333333333333,30.2335329341317"
+                    Point3="-271.333333333333,34.2335329341317" />
+                  <mssgle:LineSegment
+                    End="-271.333333333333,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7404,28 +7404,6 @@ ORDER BY unitId</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CrowdSourcing ETL.Paths[Unir tout sortie 11]"
-          TopLeft="278.75,711">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59"
-              Start="0,0"
-              End="0,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CrowdSourcing ETL.Paths[Unir tout sortie 1]"
           TopLeft="280,497">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7438,6 +7416,28 @@ ORDER BY unitId</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CrowdSourcing ETL.Paths[Unir tout sortie 1]"
+          TopLeft="278.75,711">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7583,7 +7583,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Import Crowd.Paths[Sortie de colonne dérivée1]"
+          Id="Package\Import Crowd.Paths[Sortie de colonne dérivée]"
           TopLeft="322,377">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -7617,7 +7617,7 @@ ORDER BY unitId</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Import Crowd.Paths[Sortie de colonne dérivée]"
+          Id="Package\Import Crowd.Paths[Sortie de colonne dérivée1]"
           TopLeft="296.5,170">
           <EdgeLayout.Curve>
             <mssgle:Curve
