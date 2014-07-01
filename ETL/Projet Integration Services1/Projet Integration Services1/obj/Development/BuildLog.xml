@@ -2,13 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>PlayGet_ETL</Name>
-    <LastWriteTime>2014-06-24T06:55:29.2746991Z</LastWriteTime>
+    <LastWriteTime>2014-07-01T14:38:51.347421Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2014-06-24T10:46:58.5208393Z</LastWriteTime>
+      <Name>ETL.dtsx</Name>
+      <LastWriteTime>2014-07-01T12:06:26.9775665Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Classification.dtsx</Name>
+      <LastWriteTime>2014-07-01T14:58:26.1267482Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
